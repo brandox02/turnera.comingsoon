@@ -50,16 +50,13 @@ export async function addContactToAudience({
     // Obtener y validar audienceId
     const audienceId = getAudienceId();
 
-    // Agregar contacto a la audiencia con metadata
+    // Agregar contacto a la audiencia
+    // Nota: Las propiedades personalizadas deben configurarse en el dashboard de Resend
+    // y se pueden agregar después de crear el contacto usando la API de actualización
     const result = await resend.contacts.create({
       email,
       audienceId,
       unsubscribed: false,
-      // Incluir userType como propiedad personalizada
-      // Nota: Puede que necesites crear la propiedad 'user_type' en Resend dashboard primero
-      properties: {
-        user_type: userType,
-      },
     });
 
     // Si el contacto ya existe, Resend puede retornar un error

@@ -50,6 +50,17 @@ export default function Logo({
   const imagePath = getImagePath();
   const dimensions = sizeMap[size];
 
+  // Generar alt text descriptivo según variant y color
+  const getAltText = () => {
+    const variantText = variant === 'isotipo' 
+      ? 'Isotipo de Turnera' 
+      : variant === 'vertical' 
+      ? 'Logotipo vertical de Turnera' 
+      : 'Logotipo horizontal de Turnera';
+    const colorText = color === 'white' ? 'en color blanco' : 'en color';
+    return `${variantText} ${colorText} - Sistema de gestión de citas para barberías y salones`;
+  };
+
   // Si hay error cargando la imagen, mostrar fallback
   if (imageError) {
     return (
@@ -87,7 +98,7 @@ export default function Logo({
     >
       <Image
         src={imagePath}
-        alt="Turnera Logo"
+        alt={getAltText()}
         height={dimensions.height}
         width={dimensions.width}
         className="h-full w-auto object-contain"

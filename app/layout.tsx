@@ -24,11 +24,12 @@ const reenieBeanie = Reenie_Beanie({
   display: "swap",
 });
 
-const schemaOrg = {
+const softwareApplicationSchema = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
   name: "Turnera",
   applicationCategory: "BusinessApplication",
+  applicationSubCategory: "Scheduling Software",
   operatingSystem: "iOS, Android, Web",
   offers: {
     "@type": "Offer",
@@ -46,13 +47,44 @@ const schemaOrg = {
     "Métricas y analytics",
     "Gestión de clientes y marketing",
   ],
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "5",
+    ratingCount: "1",
+  },
+};
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Turnera",
+  url: SITE_URL,
+  logo: `${SITE_URL}/images/logos/turnera-logotipo-horizontal.jpg`,
+  description:
+    "Plataforma de gestión de citas y turnos para barberías y salones de belleza. Sistema completo con reservas online 24/7, pagos integrados y notificaciones inteligentes.",
+  sameAs: [
+    "https://www.instagram.com/turnera.official",
+  ],
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Turnera",
+  url: SITE_URL,
+  description:
+    "Sistema de gestión de citas y turnos para barberías y salones. Reservas online 24/7, pagos integrados y notificaciones automáticas.",
+  publisher: {
+    "@type": "Organization",
+    name: "Turnera",
+  },
 };
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "Turnera - La revolución en gestión para Barberías y Salones | Lanzamiento en menos de 20 días",
+  title: "Turnera - Sistema de Citas para Barberías y Salones",
   description:
-    "Turnera automatiza tus citas, gestiona tu cola y maximiza tus ingresos. Deja de perder clientes y empieza a escalar tu negocio. Sistema operativo completo para barberías y salones.",
+    "Turnera automatiza tus citas, gestiona tu cola y maximiza tus ingresos. Reservas online 24/7, pagos integrados y notificaciones automáticas. Sistema completo para barberías y salones de belleza.",
   keywords: [
     "Turnera",
     "sistema de citas barberías",
@@ -61,6 +93,21 @@ export const metadata: Metadata = {
     "reservas online 24/7",
     "pagos online citas",
     "software salones belleza",
+    "sistema de citas para barberías",
+    "gestión de turnos salones de belleza",
+    "app para barberías",
+    "software de citas para salones",
+    "sistema de reservas online barbería",
+    "gestión de colas barbería",
+    "app de citas para salones de belleza",
+    "notificaciones automáticas citas",
+    "sistema de gestión barbería",
+    "software para salones de belleza",
+    "app gestión citas barbería",
+    "sistema de citas latinoamérica",
+    "reservas online barberías",
+    "pagos anticipados citas",
+    "reducción ausencias barberías",
   ],
   authors: [{ name: "Turnera" }],
   creator: "Turnera",
@@ -70,6 +117,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
+  themeColor: "#AC2121",
   openGraph: {
     type: "website",
     locale: "es_ES",
@@ -77,21 +125,21 @@ export const metadata: Metadata = {
     siteName: "Turnera",
     title: "Turnera - Sistema de Citas 24/7 para Barberías",
     description:
-      "La plataforma completa para gestionar citas y turnos. Lanzamiento en 18 días.",
+      "La plataforma completa para gestionar citas y turnos. Reservas online 24/7, pagos integrados y notificaciones automáticas.",
     images: [
       {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Turnera - Sistema de Citas para Barberías",
+        alt: "Turnera - Sistema de Citas para Barberías y Salones",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Turnera - La revolución en gestión para Barberías y Salones",
+    title: "Turnera - Sistema de Citas para Barberías y Salones",
     description:
-      "Lanzamiento en menos de 20 días. Automatiza tus citas, gestiona tu cola y maximiza tus ingresos.",
+      "Reservas online 24/7, pagos integrados y notificaciones automáticas. Automatiza tus citas y maximiza tus ingresos.",
     images: [`${SITE_URL}/twitter-image.jpg`],
   },
   robots: {
@@ -120,7 +168,13 @@ export default function RootLayout({
       <head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaOrg) }}
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify([
+              softwareApplicationSchema,
+              organizationSchema,
+              websiteSchema,
+            ]),
+          }}
         />
       </head>
       <body

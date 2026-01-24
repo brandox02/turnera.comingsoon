@@ -62,7 +62,7 @@ export default function WhatIsTurnera() {
       className="py-24 md:py-32 px-6 md:px-12 border-b border-text/5"
     >
       <div className="max-w-screen-xl mx-auto">
-        <div className="text-center mb-16 fade-in-up">
+        <div className="text-center mb-20 md:mb-24 fade-in-up">
           <span className="inline-block px-4 py-1.5 bg-primary/10 text-primary rounded-full text-xs font-sans font-bold uppercase tracking-widest mb-6">
             Tu solución completa para barberías y salones
           </span>
@@ -85,24 +85,45 @@ export default function WhatIsTurnera() {
         </div>
 
         {/* Features Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 fade-in-up">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 fade-in-up">
           {features.map((feature, index) => {
             const Icon = feature.icon;
             return (
               <div
                 key={index}
-                className="bg-gradient-to-br from-primary/5 to-primary-light/5 border border-primary/10 rounded-3xl p-8 hover:shadow-[0_0_30px_rgba(172,33,33,0.15)] transition-all duration-300 hover:scale-[1.02]"
+                className="group relative bg-white/60 backdrop-blur-xl border border-primary/20 rounded-3xl p-10 hover:bg-white/80 hover:border-primary/30 hover:shadow-[0_20px_60px_rgba(172,33,33,0.2)] transition-all duration-500 hover:scale-[1.03] hover:-translate-y-1 overflow-hidden"
               >
-                <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary-light rounded-2xl flex items-center justify-center mb-6">
-                  <Icon className="w-8 h-8 text-white" />
+                {/* Glassmorphism overlay effect */}
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary-light/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+                
+                {/* Subtle shine effect on hover */}
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 pointer-events-none" />
+                
+                {/* Icon container with enhanced depth */}
+                <div className="relative w-20 h-20 bg-gradient-to-br from-primary via-primary-dark to-primary-light rounded-2xl flex items-center justify-center mb-8 shadow-[0_8px_24px_rgba(172,33,33,0.25)] group-hover:shadow-[0_12px_32px_rgba(172,33,33,0.35)] group-hover:scale-110 transition-all duration-500">
+                  <Icon className="w-9 h-9 text-white relative z-10" />
+                  {/* Icon glow effect */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent rounded-2xl" />
                 </div>
-                <h3 className="font-sans font-bold text-2xl mb-3">{feature.title}</h3>
-                <p className="text-text/70 font-body leading-relaxed mb-3">{feature.description}</p>
+                
+                {/* Title with better hierarchy */}
+                <h3 className="relative font-sans font-bold text-2xl md:text-2xl mb-4 text-text leading-tight group-hover:text-primary transition-colors duration-300">
+                  {feature.title}
+                </h3>
+                
+                {/* Description with improved readability */}
+                <p className="relative text-text/75 font-body text-base leading-relaxed mb-6 min-h-[4.5rem]">
+                  {feature.description}
+                </p>
+                
+                {/* Highlight with enhanced visibility */}
                 {feature.highlight && (
-                  <p className="text-primary font-body font-semibold text-sm flex items-center gap-2">
-                    <span>✨</span>
-                    <span>{feature.highlight}</span>
-                  </p>
+                  <div className="relative pt-4 border-t border-primary/10 group-hover:border-primary/20 transition-colors duration-300">
+                    <p className="text-primary font-body font-semibold text-sm md:text-base leading-relaxed flex items-start gap-3">
+                      <span className="text-lg mt-0.5 flex-shrink-0">✨</span>
+                      <span>{feature.highlight}</span>
+                    </p>
+                  </div>
                 )}
               </div>
             );

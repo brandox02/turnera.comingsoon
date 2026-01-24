@@ -15,7 +15,7 @@ export default function Navigation() {
   };
 
   return (
-    <nav className="fixed top-0 w-full z-50 backdrop-blur-md bg-background/80 border-b border-text/5 bg-white">
+    <nav className="fixed top-0 w-full z-50 backdrop-blur-sm border-b border-text/5 ">
       <div className="max-w-screen-2xl mx-auto px-6 md:px-12 h-20 flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="flex items-center group transition-transform group-hover:scale-105">
@@ -25,7 +25,7 @@ export default function Navigation() {
             size="xl"
             priority={true}
             showTextOnMobile={false}
-            className="h-10 md:h-12"
+            className="h-12 "
           />
         </a>
 

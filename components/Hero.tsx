@@ -110,7 +110,7 @@ export default function Hero() {
               Revoluciona tu Barbería o Salón con Turnera
             </p>
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white/70 font-body leading-relaxed">
-              Automatiza tus citas, gestiona las filas y maximiza tus ingresos desde tu celular. Deja de perder clientes y empieza a escalar tu negocio.
+              Automatiza tus citas, gestiona las filas y maximiza tus ingresos desde tu celular. Deja de perder clientes y empieza a escalar tu negocio <span className="text-primary-light">sin costo</span>.
             </p>
           </div>
 

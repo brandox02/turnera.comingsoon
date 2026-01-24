@@ -68,7 +68,7 @@ export default function ComingSoon() {
             Sé el primero en probar <span className="text-primary">Turnera</span>
           </h2>
           <p className="text-xl md:text-2xl text-text/70 font-body font-medium max-w-2xl mx-auto leading-relaxed mb-16">
-            Únete a la lista de espera exclusiva. Recibirás una notificación prioritaria y un beneficio especial de lanzamiento.
+            Únete a la lista de espera exclusiva. Recibirás una notificación prioritaria y un beneficio especial de lanzamiento. El acceso a turnera será completamente <span className="text-primary">gratis</span>.
           </p>
 
           {/* Large Countdown - Responsive */}

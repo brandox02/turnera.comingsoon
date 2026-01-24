@@ -74,7 +74,7 @@ export default function WhatIsTurnera() {
           </h2>
           <p className="text-xl md:text-2xl text-text/70 font-body font-medium max-w-3xl mx-auto leading-relaxed mb-6">
             Una aplicación fácil de usar que resuelve los problemas reales de tu negocio desde tu celular.
-            Automatiza reservas, reduce ausencias, incrementa tus ingresos y mejora la experiencia y fidelidad de tus clientes.
+            Automatiza reservas, reduce ausencias, <span className='text-primary'> incrementa tus ingresos </span>y mejora la experiencia y fidelidad de tus clientes <span className="text-primary">sin costo</span>.
           </p>
           {/* Mención de App Móvil */}
           {false && < div className="inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-primary/10 via-primary/5 to-primary-light/10 border border-primary/20 rounded-full shadow-[0_4px_20px_rgba(172,33,33,0.1)] hover:shadow-[0_6px_30px_rgba(172,33,33,0.15)] transition-all duration-300 hover:scale-105">

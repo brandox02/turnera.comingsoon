@@ -14,7 +14,7 @@ export default function Footer() {
     <footer className="relative bg-text text-white py-16 md:py-20 px-6 md:px-12 border-t border-white/10 overflow-hidden">
       {/* Background gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-primary/5 via-transparent to-transparent pointer-events-none" />
-      
+
       <div className="relative max-w-screen-2xl mx-auto">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-8">
@@ -104,7 +104,7 @@ export default function Footer() {
           <div className="flex items-center gap-1 text-white/40 text-xs font-body">
             <span>Hecho con</span>
             <span className="text-primary-light">❤️</span>
-            <span>para LATAM</span>
+            <span>para RD </span>
           </div>
         </div>
       </div>

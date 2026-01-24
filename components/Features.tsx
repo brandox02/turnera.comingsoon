@@ -114,7 +114,7 @@ export default function Features() {
             <span className="text-primary-light font-semibold text-xl md:text-2xl">
               para ganar clientes y aumentar tus ingresos.
             </span>
-            {' '}
+
           </p>
         </div>
 

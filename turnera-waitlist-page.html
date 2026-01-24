@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turnera - Sistema de Citas y Turnos para Barberías | Lanzamiento en 18 Días</title>
+    <meta name="description" content="Turnera transforma tu barbería en un negocio digital 24/7. Reservas online, pagos integrados, notificaciones inteligentes. Reduce no-shows 80%. Lanza en 18 días.">
+    <meta name="keywords" content="Turnera, sistema de citas barberías, gestión turnos salones, app barberías, reservas online 24/7, pagos online citas, software salones belleza">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Turnera - Sistema de Citas 24/7 para Barberías">
+    <meta property="og:description" content="La plataforma completa para gestionar citas y turnos. Lanzamiento en 18 días.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://turnera.com">
+    <meta property="og:image" content="https://turnera.com/og-image.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Turnera - Sistema de Citas para Barberías">
+    <meta name="twitter:description" content="Lanzamiento en 18 días. Reservas 24/7, pagos online, notificaciones inteligentes.">
+    <meta name="twitter:image" content="https://turnera.com/twitter-image.jpg">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&family=Reenie+Beanie&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Turnera",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "iOS, Android, Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/PreOrder"
+      },
+      "description": "Sistema completo de gestión de citas y turnos para barberías y salones con reservas online 24/7, pagos integrados y notificaciones inteligentes.",
+      "featureList": [
+        "Reservas online 24/7",
+        "Sistema de pagos integrado",
+        "Notificaciones automáticas",
+        "Gestión de múltiples especialistas",
+        "Métricas y analytics",
+        "Gestión de clientes y marketing"
+      ]
+    }
+    </script>
+  
+  <script type="module" async src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fturnerala9280back.builtwithrocket.new&_be=https%3A%2F%2Fappanalytics.rocket.new&_v=0.1.15"></script>
+  <script type="module" defer src="https://static.rocket.new/rocket-shot.js?v=0.0.2"></script>
+  </head>
+<body class="bg-[#FEFEFE] text-[#1A1A1A] antialiased selection:bg-[#AC2121] selection:text-white overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 backdrop-blur-md bg-[#FEFEFE]/80 border-b border-[#1A1A1A]/5">
+        <div class="max-w-screen-2xl mx-auto px-6 md:px-12 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#" class="flex items-center gap-2 group">
+                <div class="w-10 h-10 bg-gradient-to-br from-[#AC2121] via-[#AE2120] to-[#B43C3A] rounded-xl flex items-center justify-center text-white font-bold text-xl transition-transform group-hover:scale-105">
+                    T
+                </div>
+                <span class="font-['Plus_Jakarta_Sans'] font-bold text-xl tracking-tight hidden md:block">Turnera</span>
+            </a>
+            
+            <!-- CTA Button -->
+            <button onclick="scrollToNotify()" class="bg-gradient-to-r from-[#AC2121] via-[#AE2120] to-[#B43C3A] text-white px-6 py-2.5 rounded-full font-['Plus_Jakarta_Sans'] font-bold text-sm uppercase tracking-wider hover:shadow-[0_0_20px_rgba(172,33,33,0.4)] transition-all duration-300 hover:scale-105">
+                Notificarme
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="relative min-h-screen flex items-center justify-center px-6 md:px-12 pt-32 pb-20 overflow-hidden">
+        <!-- Animated Gradient Background -->
+        <div class="absolute inset-0 bg-gradient-to-br from-[#AC2121] via-[#AE2120] to-[#B43C3A] opacity-90"></div>
+        
+        <!-- Noise Texture -->
+        <div class="absolute inset-0 opacity-[0.03]" style="background-image: url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E');"></div>
+        
+        <!-- Content -->
+        <div class="relative z-10 max-w-screen-2xl mx-auto w-full">
+            <div class="text-center mb-16">
+                <!-- Badge -->
+                <div class="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full mb-8 animate-pulse">
+                    <div class="w-2 h-2 bg-[#FEFEFE] rounded-full"></div>
+                    <span class="text-white text-xs font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-widest">Lanzamiento Inminente</span>
+                </div>
+                
+                <!-- Main Headline -->
+                <div class="reveal-container mb-6">
+                    <h1 class="font-['Plus_Jakarta_Sans'] font-black text-6xl md:text-8xl lg:text-9xl leading-[0.85] tracking-tighter text-white uppercase">
+                        <span class="block reveal-text"><span class="reveal-inner">Turnera</span></span>
+                        <span class="block reveal-text" style="animation-delay: 0.1s;"><span class="reveal-inner">está</span></span>
+                        <span class="block reveal-text" style="animation-delay: 0.2s;">
+                            <span class="reveal-inner font-['Reenie_Beanie'] font-normal text-7xl md:text-9xl normal-case">llegando</span>
+                        </span>
+                    </h1>
+                </div>
+                
+                <!-- Subheadline -->
+                <p class="text-xl md:text-2xl text-white/90 font-['DM_Sans'] font-medium max-w-3xl mx-auto leading-relaxed mb-12">
+                    La revolución en gestión de citas y turnos para barberías y salones de belleza
+                </p>
+                
+                <!-- CTA Button -->
+                <button onclick="scrollToNotify()" class="bg-white text-[#AC2121] px-10 py-5 rounded-full font-['Plus_Jakarta_Sans'] font-black text-sm uppercase tracking-widest hover:bg-[#FEFEFE] hover:shadow-[0_0_40px_rgba(255,255,255,0.3)] transition-all duration-300 inline-flex items-center gap-3 group">
+                    <span>Quiero ser notificado</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="group-hover:translate-x-1 transition-transform"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </button>
+            </div>
+            
+            <!-- Floating Countdown Card -->
+            <div class="max-w-md mx-auto backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl p-8 shadow-2xl">
+                <div class="text-center">
+                    <p class="text-white/70 text-sm font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-widest mb-4">Lanzamiento en</p>
+                    <div id="countdown" class="flex justify-center gap-6 mb-4">
+                        <div class="flex flex-col items-center">
+                            <div class="w-20 h-20 bg-white/20 backdrop-blur-md rounded-2xl flex items-center justify-center mb-2">
+                                <span id="days" class="text-4xl font-['Plus_Jakarta_Sans'] font-black text-white">18</span>
+                            </div>
+                            <span class="text-white/70 text-xs font-['DM_Sans'] uppercase tracking-wider">Días</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div class="w-20 h-20 bg-white/20 backdrop-blur-md rounded-2xl flex items-center justify-center mb-2">
+                                <span id="hours" class="text-4xl font-['Plus_Jakarta_Sans'] font-black text-white">07</span>
+                            </div>
+                            <span class="text-white/70 text-xs font-['DM_Sans'] uppercase tracking-wider">Horas</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div class="w-20 h-20 bg-white/20 backdrop-blur-md rounded-2xl flex items-center justify-center mb-2">
+                                <span id="minutes" class="text-4xl font-['Plus_Jakarta_Sans'] font-black text-white">32</span>
+                            </div>
+                            <span class="text-white/70 text-xs font-['DM_Sans'] uppercase tracking-wider">Min</span>
+                        </div>
+                    </div>
+                    <p class="text-white/60 text-sm font-['DM_Sans']">Viernes 14 de Febrero, 2026 • 3PM EST</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- What is Turnera Section -->
+    <section id="what-is" class="py-24 md:py-32 px-6 md:px-12 border-b border-[#1A1A1A]/5">
+        <div class="max-w-screen-xl mx-auto">
+            <div class="text-center mb-16 fade-in-up">
+                <span class="inline-block px-4 py-1.5 bg-[#AC2121]/10 text-[#AC2121] rounded-full text-xs font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-widest mb-6">El Sistema Completo</span>
+                <h2 class="font-['Plus_Jakarta_Sans'] font-black text-5xl md:text-7xl tracking-tighter mb-6">
+                    ¿Qué es <span class="text-[#AC2121]">Turnera</span>?
+                </h2>
+                <p class="text-xl md:text-2xl text-[#1A1A1A]/70 font-['DM_Sans'] font-medium max-w-3xl mx-auto leading-relaxed">
+                    La plataforma completa que transforma tu barbería o salón en un negocio digital 24/7. 
+                    <span class="text-[#AC2121] font-semibold">Nunca más pierdas un cliente. Nunca más persigas no-shows.</span>
+                </p>
+            </div>
+            
+            <!-- Bento Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 fade-in-up">
+                <div class="bg-gradient-to-br from-[#AC2121]/5 to-[#B43C3A]/5 border border-[#AC2121]/10 rounded-3xl p-8 hover:shadow-[0_0_30px_rgba(172,33,33,0.15)] transition-all duration-300 hover:scale-[1.02]">
+                    <div class="w-16 h-16 bg-gradient-to-br from-[#AC2121] to-[#B43C3A] rounded-2xl flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M8 2v4"/><path d="M16 2v4"/><path d="M3 10h18"/></svg>
+                    </div>
+                    <h3 class="font-['Plus_Jakarta_Sans'] font-bold text-2xl mb-3">Página de Reserva 24/7</h3>
+                    <p class="text-[#1A1A1A]/70 font-['DM_Sans'] leading-relaxed">Clientes pueden agendar citas en cualquier momento, incluso cuando tu negocio está cerrado</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-[#AC2121]/5 to-[#B43C3A]/5 border border-[#AC2121]/10 rounded-3xl p-8 hover:shadow-[0_0_30px_rgba(172,33,33,0.15)] transition-all duration-300 hover:scale-[1.02]">
+                    <div class="w-16 h-16 bg-gradient-to-br from-[#AC2121] to-[#B43C3A] rounded-2xl flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+                    </div>
+                    <h3 class="font-['Plus_Jakarta_Sans'] font-bold text-2xl mb-3">Cola Inteligente</h3>
+                    <p class="text-[#1A1A1A]/70 font-['DM_Sans'] leading-relaxed">Sistema híbrido que combina citas programadas y turnos presenciales en tiempo real</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-[#AC2121]/5 to-[#B43C3A]/5 border border-[#AC2121]/10 rounded-3xl p-8 hover:shadow-[0_0_30px_rgba(172,33,33,0.15)] transition-all duration-300 hover:scale-[1.02]">
+                    <div class="w-16 h-16 bg-gradient-to-br from-[#AC2121] to-[#B43C3A] rounded-2xl flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="5" rx="2"/><path d="M2 10h20"/></svg>
+                    </div>
+                    <h3 class="font-['Plus_Jakarta_Sans'] font-bold text-2xl mb-3">Pagos Integrados</h3>
+                    <p class="text-[#1A1A1A]/70 font-['DM_Sans'] leading-relaxed">Los clientes pagan al reservar. Reduce no-shows hasta en un 80%</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-[#AC2121]/5 to-[#B43C3A]/5 border border-[#AC2121]/10 rounded-3xl p-8 hover:shadow-[0_0_30px_rgba(172,33,33,0.15)] transition-all duration-300 hover:scale-[1.02]">
+                    <div class="w-16 h-16 bg-gradient-to-br from-[#AC2121] to-[#B43C3A] rounded-2xl flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+                    </div>
+                    <h3 class="font-['Plus_Jakarta_Sans'] font-bold text-2xl mb-3">Notificaciones Inteligentes</h3>
+                    <p class="text-[#1A1A1A]/70 font-['DM_Sans'] leading-relaxed">Recordatorios automáticos, promociones personalizadas, reactivación de clientes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features Section -->
+    <section id="features" class="py-24 md:py-32 px-6 md:px-12 bg-gradient-to-br from-[#1A1A1A] to-[#2A2A2A] text-white relative overflow-hidden">
+        <!-- Noise Texture -->
+        <div class="absolute inset-0 opacity-[0.02]" style="background-image: url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E');"></div>
+        
+        <div class="max-w-screen-xl mx-auto relative z-10">
+            <div class="text-center mb-20 fade-in-up">
+                <span class="inline-block px-4 py-1.5 bg-[#AC2121] text-white rounded-full text-xs font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-widest mb-6">Funcionalidades Clave</span>
+                <h2 class="font-['Plus_Jakarta_Sans'] font-black text-5xl md:text-7xl tracking-tighter mb-6">
+                    Diseñado para <span class="text-[#B43C3A]">maximizar</span> tus ingresos
+                </h2>
+                <p class="text-xl md:text-2xl text-white/70 font-['DM_Sans'] font-medium max-w-3xl mx-auto leading-relaxed">
+                    Cada funcionalidad está pensada para ayudarte a ganar más dinero y trabajar menos
+                </p>
+            </div>
+            
+            <!-- Features Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 feature-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card backdrop-blur-xl bg-white/5 border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-all duration-300 group relative overflow-hidden">
+                    <div class="absolute top-4 right-4">
+                        <span class="px-3 py-1 bg-[#AC2121] text-white text-xs font-['Plus_Jakarta_Sans'] font-bold rounded-full">ROI+</span>
+                    </div>
+                    <div class="w-16 h-16 bg-gradient-to-br from-[#AC2121] to-[#B43C3A] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-6.219-8.56"/><circle cx="12" cy="12" r="1"/></svg>
+                    </div>
+                    <h3 class="font-['Plus_Jakarta_Sans'] font-bold text-2xl mb-3 group-hover:text-[#B43C3A] transition-colors">Reserva Online 24/7</h3>
+                    <p class="text-white/70 font-['DM_Sans'] mb-4 leading-relaxed">Tu negocio nunca cierra. Captura reservas a las 2 AM mientras duermes.</p>
+                    <div class="text-[#B43C3A] font-['Plus_Jakarta_Sans'] font-bold text-sm">+40% más reservas</div>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="feature-card backdrop-blur-xl bg-white/5 border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-all duration-300 group relative overflow-hidden">
+                    <div class="absolute top-4 right-4">
+                        <span class="px-3 py-1 bg-[#AC2121] text-white text-xs font-['Plus_Jakarta_Sans'] font-bold rounded-full">Crítico</span>
+                    </div>
+                    <div class="w-16 h-16 bg-gradient-to-br from-[#AC2121] to-[#B43C3A] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="5" rx="2"/><path d="M2 10h20"/></svg>
+                    </div>
+                    <h3 class="font-['Plus_Jakarta_Sans'] font-bold text-2xl mb-3 group-hover:text-[#B43C3A] transition-colors">Pagos Online</h3>
+                    <p class="text-white/70 font-['DM_Sans'] mb-4 leading-relaxed">Los clientes pagan al reservar. Depósitos o pago completo para asegurar llegada.</p>
+                    <div class="text-[#B43C3A] font-['Plus_Jakarta_Sans'] font-bold text-sm">-80% no-shows</div>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="feature-card backdrop-blur-xl bg-white/5 border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-all duration-300 group relative overflow-hidden">
+                    <div class="absolute top-4 right-4">
+                        <span class="px-3 py-1 bg-[#AC2121] text-white text-xs font-['Plus_Jakarta_Sans'] font-bold rounded-full">Auto</span>
+                    </div>
+                    <div class="w-16 h-16 bg-gradient-to-br from-[#AC2121] to-[#B43C3A] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+                    </div>
+                    <h3 class="font-['Plus_Jakarta_Sans'] font-bold text-2xl mb-3 group-hover:text-[#B43C3A] transition-colors">Notificaciones Inteligentes</h3>
+                    <p class="text-white/70 font-['DM_Sans'] mb-4 leading-relaxed">Recordatorios automáticos, promociones personalizadas, reactivación de clientes inactivos.</p>
+                    <div class="text-[#B43C3A] font-['Plus_Jakarta_Sans'] font-bold text-sm">Vende mientras duermes</div>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="feature-card backdrop-blur-xl bg-white/5 border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-all duration-300 group relative overflow-hidden">
+                    <div class="w-16 h-16 bg-gradient-to-br from-[#AC2121] to-[#B43C3A] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <h3 class="font-['Plus_Jakarta_Sans'] font-bold text-2xl mb-3 group-hover:text-[#B43C3A] transition-colors">Múltiples Especialistas</h3>
+                    <p class="text-white/70 font-['DM_Sans'] mb-4 leading-relaxed">Gestiona 10 barberos tan fácil como 1. Maximiza tu capacidad de atención.</p>
+                    <div class="text-[#B43C3A] font-['Plus_Jakarta_Sans'] font-bold text-sm">Más capacidad = más ingresos</div>
+                </div>
+                
+                <!-- Feature 5 -->
+                <div class="feature-card backdrop-blur-xl bg-white/5 border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-all duration-300 group relative overflow-hidden">
+                    <div class="w-16 h-16 bg-gradient-to-br from-[#AC2121] to-[#B43C3A] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    </div>
+                    <h3 class="font-['Plus_Jakarta_Sans'] font-bold text-2xl mb-3 group-hover:text-[#B43C3A] transition-colors">Base de Datos de Clientes</h3>
+                    <p class="text-white/70 font-['DM_Sans'] mb-4 leading-relaxed">Identifica clientes VIP, segmenta audiencias, envía promociones dirigidas.</p>
+                    <div class="text-[#B43C3A] font-['Plus_Jakarta_Sans'] font-bold text-sm">Marketing integrado</div>
+                </div>
+                
+                <!-- Feature 6 -->
+                <div class="feature-card backdrop-blur-xl bg-white/5 border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-all duration-300 group relative overflow-hidden">
+                    <div class="w-16 h-16 bg-gradient-to-br from-[#AC2121] to-[#B43C3A] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+                    </div>
+                    <h3 class="font-['Plus_Jakarta_Sans'] font-bold text-2xl mb-3 group-hover:text-[#B43C3A] transition-colors">Métricas en Tiempo Real</h3>
+                    <p class="text-white/70 font-['DM_Sans'] mb-4 leading-relaxed">Dashboard con clientes frecuentes, servicios populares, ingresos por cliente.</p>
+                    <div class="text-[#B43C3A] font-['Plus_Jakarta_Sans'] font-bold text-sm">Decisiones basadas en datos</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preview Section -->
+    <section id="preview" class="py-24 md:py-32 px-6 md:px-12 border-b border-[#1A1A1A]/5">
+        <div class="max-w-screen-xl mx-auto">
+            <div class="text-center mb-20 fade-in-up">
+                <span class="inline-block px-4 py-1.5 bg-[#AC2121]/10 text-[#AC2121] rounded-full text-xs font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-widest mb-6">Vista Previa Exclusiva</span>
+                <h2 class="font-['Plus_Jakarta_Sans'] font-black text-5xl md:text-7xl tracking-tighter mb-6">
+                    Así funciona <span class="text-[#AC2121]">Turnera</span>
+                </h2>
+                <p class="text-xl md:text-2xl text-[#1A1A1A]/70 font-['DM_Sans'] font-medium max-w-3xl mx-auto leading-relaxed">
+                    Descubre cómo Turnera transformará tu negocio y la experiencia de tus clientes
+                </p>
+            </div>
+            
+            <!-- Preview Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 preview-grid">
+                <!-- Client Flow Cards -->
+                <div class="preview-card backdrop-blur-md bg-gradient-to-br from-[#AC2121]/5 to-[#B43C3A]/5 border border-[#AC2121]/20 rounded-3xl p-6 hover:shadow-[0_0_30px_rgba(172,33,33,0.2)] transition-all duration-300 group relative overflow-hidden">
+                    <div class="absolute top-3 right-3">
+                        <span class="px-2 py-1 bg-[#AC2121] text-white text-[10px] font-['Plus_Jakarta_Sans'] font-bold rounded-full">Cliente</span>
+                    </div>
+                    <div class="flex items-center justify-center mb-6">
+                        <div class="w-20 h-20 bg-gradient-to-br from-[#AC2121]/10 to-[#B43C3A]/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#AC2121" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                        </div>
+                    </div>
+                    <h3 class="font-['Plus_Jakarta_Sans'] font-bold text-lg mb-2 text-center">Buscar & Reservar</h3>
+                    <p class="text-[#1A1A1A]/60 font-['DM_Sans'] text-sm text-center leading-relaxed">El cliente encuentra tu negocio online y ve horarios disponibles 24/7</p>
+                </div>
+                
+                <div class="preview-card backdrop-blur-md bg-gradient-to-br from-[#AC2121]/5 to-[#B43C3A]/5 border border-[#AC2121]/20 rounded-3xl p-6 hover:shadow-[0_0_30px_rgba(172,33,33,0.2)] transition-all duration-300 group relative overflow-hidden">
+                    <div class="absolute top-3 right-3">
+                        <span class="px-2 py-1 bg-[#AC2121] text-white text-[10px] font-['Plus_Jakarta_Sans'] font-bold rounded-full">Cliente</span>
+                    </div>
+                    <div class="flex items-center justify-center mb-6">
+                        <div class="w-20 h-20 bg-gradient-to-br from-[#AC2121]/10 to-[#B43C3A]/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#AC2121" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                        </div>
+                    </div>
+                    <h3 class="font-['Plus_Jakarta_Sans'] font-bold text-lg mb-2 text-center">Pagar Online</h3>
+                    <p class="text-[#1A1A1A]/60 font-['DM_Sans'] text-sm text-center leading-relaxed">Pago seguro con tarjeta o wallet digital. Depósito o pago completo</p>
+                </div>
+                
+                <div class="preview-card backdrop-blur-md bg-gradient-to-br from-[#AC2121]/5 to-[#B43C3A]/5 border border-[#AC2121]/20 rounded-3xl p-6 hover:shadow-[0_0_30px_rgba(172,33,33,0.2)] transition-all duration-300 group relative overflow-hidden">
+                    <div class="absolute top-3 right-3">
+                        <span class="px-2 py-1 bg-[#AC2121] text-white text-[10px] font-['Plus_Jakarta_Sans'] font-bold rounded-full">Cliente</span>
+                    </div>
+                    <div class="flex items-center justify-center mb-6">
+                        <div class="w-20 h-20 bg-gradient-to-br from-[#AC2121]/10 to-[#B43C3A]/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#AC2121" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+                        </div>
+                    </div>
+                    <h3 class="font-['Plus_Jakarta_Sans'] font-bold text-lg mb-2 text-center">Recibir Notificación</h3>
+                    <p class="text-[#1A1A1A]/60 font-['DM_Sans'] text-sm text-center leading-relaxed">Confirmación instantánea + recordatorios automáticos 24h y 1h antes</p>
+                </div>
+                
+                <div class="preview-card backdrop-blur-md bg-gradient-to-br from-[#AC2121]/5 to-[#B43C3A]/5 border border-[#AC2121]/20 rounded-3xl p-6 hover:shadow-[0_0_30px_rgba(172,33,33,0.2)] transition-all duration-300 group relative overflow-hidden">
+                    <div class="absolute top-3 right-3">
+                        <span class="px-2 py-1 bg-[#AC2121] text-white text-[10px] font-['Plus_Jakarta_Sans'] font-bold rounded-full">Cliente</span>
+                    </div>
+                    <div class="flex items-center justify-center mb-6">
+                        <div class="w-20 h-20 bg-gradient-to-br from-[#AC2121]/10 to-[#B43C3A]/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#AC2121" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h18v18H3zM15 9l-6 6m0-6l6 6"/></svg>
+                        </div>
+                    </div>
+                    <h3 class="font-['Plus_Jakarta_Sans'] font-bold text-lg mb-2 text-center">Ver Posición</h3>
+                    <p class="text-[#1A1A1A]/60 font-['DM_Sans'] text-sm text-center leading-relaxed">Cola en tiempo real con posición exacta y tiempo de espera estimado</p>
+                </div>
+                
+                <!-- Business Flow Cards -->
+                <div class="preview-card backdrop-blur-md bg-gradient-to-br from-[#B43C3A]/5 to-[#AC2121]/5 border border-[#B43C3A]/20 rounded-3xl p-6 hover:shadow-[0_0_30px_rgba(180,60,58,0.2)] transition-all duration-300 group relative overflow-hidden">
+                    <div class="absolute top-3 right-3">
+                        <span class="px-2 py-1 bg-[#B43C3A] text-white text-[10px] font-['Plus_Jakarta_Sans'] font-bold rounded-full">Negocio</span>
+                    </div>
+                    <div class="flex items-center justify-center mb-6">
+                        <div class="w-20 h-20 bg-gradient-to-br from-[#B43C3A]/10 to-[#AC2121]/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#B43C3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+                        </div>
+                    </div>
+                    <h3 class="font-['Plus_Jakarta_Sans'] font-bold text-lg mb-2 text-center">Dashboard en Vivo</h3>
+                    <p class="text-[#1A1A1A]/60 font-['DM_Sans'] text-sm text-center leading-relaxed">Ve todas las reservas, walk-ins e ingresos en tiempo real</p>
+                </div>
+                
+                <div class="preview-card backdrop-blur-md bg-gradient-to-br from-[#B43C3A]/5 to-[#AC2121]/5 border border-[#B43C3A]/20 rounded-3xl p-6 hover:shadow-[0_0_30px_rgba(180,60,58,0.2)] transition-all duration-300 group relative overflow-hidden">
+                    <div class="absolute top-3 right-3">
+                        <span class="px-2 py-1 bg-[#B43C3A] text-white text-[10px] font-['Plus_Jakarta_Sans'] font-bold rounded-full">Negocio</span>
+                    </div>
+                    <div class="flex items-center justify-center mb-6">
+                        <div class="w-20 h-20 bg-gradient-to-br from-[#B43C3A]/10 to-[#AC2121]/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#B43C3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="2" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                        </div>
+                    </div>
+                    <h3 class="font-['Plus_Jakarta_Sans'] font-bold text-lg mb-2 text-center">Gestionar Cola</h3>
+                    <p class="text-[#1A1A1A]/60 font-['DM_Sans'] text-sm text-center leading-relaxed">Cola inteligente combina citas agendadas + turnos presenciales</p>
+                </div>
+                
+                <div class="preview-card backdrop-blur-md bg-gradient-to-br from-[#B43C3A]/5 to-[#AC2121]/5 border border-[#B43C3A]/20 rounded-3xl p-6 hover:shadow-[0_0_30px_rgba(180,60,58,0.2)] transition-all duration-300 group relative overflow-hidden">
+                    <div class="absolute top-3 right-3">
+                        <span class="px-2 py-1 bg-[#B43C3A] text-white text-[10px] font-['Plus_Jakarta_Sans'] font-bold rounded-full">Negocio</span>
+                    </div>
+                    <div class="flex items-center justify-center mb-6">
+                        <div class="w-20 h-20 bg-gradient-to-br from-[#B43C3A]/10 to-[#AC2121]/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#B43C3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+                        </div>
+                    </div>
+                    <h3 class="font-['Plus_Jakarta_Sans'] font-bold text-lg mb-2 text-center">Analizar Métricas</h3>
+                    <p class="text-[#1A1A1A]/60 font-['DM_Sans'] text-sm text-center leading-relaxed">Identifica servicios top, clientes VIP, horas pico en tiempo real</p>
+                </div>
+                
+                <div class="preview-card backdrop-blur-md bg-gradient-to-br from-[#B43C3A]/5 to-[#AC2121]/5 border border-[#B43C3A]/20 rounded-3xl p-6 hover:shadow-[0_0_30px_rgba(180,60,58,0.2)] transition-all duration-300 group relative overflow-hidden">
+                    <div class="absolute top-3 right-3">
+                        <span class="px-2 py-1 bg-[#B43C3A] text-white text-[10px] font-['Plus_Jakarta_Sans'] font-bold rounded-full">Negocio</span>
+                    </div>
+                    <div class="flex items-center justify-center mb-6">
+                        <div class="w-20 h-20 bg-gradient-to-br from-[#B43C3A]/10 to-[#AC2121]/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#B43C3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg>
+                        </div>
+                    </div>
+                    <h3 class="font-['Plus_Jakarta_Sans'] font-bold text-lg mb-2 text-center">Enviar Promos</h3>
+                    <p class="text-[#1A1A1A]/60 font-['DM_Sans'] text-sm text-center leading-relaxed">Reactiva clientes inactivos con ofertas dirigidas y personalizadas</p>
+                </div>
+            </div>
+            
+            <!-- CTA -->
+            <div class="text-center mt-16 fade-in-up">
+                <button onclick="scrollToNotify()" class="bg-gradient-to-r from-[#AC2121] via-[#AE2120] to-[#B43C3A] text-white px-10 py-5 rounded-full font-['Plus_Jakarta_Sans'] font-black text-sm uppercase tracking-widest hover:shadow-[0_0_40px_rgba(172,33,33,0.4)] transition-all duration-300 inline-flex items-center gap-3 group">
+                    <span>Quiero ser el primero en probarlo</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="group-hover:translate-x-1 transition-transform"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coming Soon + Countdown Section -->
+    <section id="coming-soon" class="py-24 md:py-32 px-6 md:px-12 bg-gradient-to-br from-[#1A1A1A] to-[#2A2A2A] text-white relative overflow-hidden">
+        <!-- Noise Texture -->
+        <div class="absolute inset-0 opacity-[0.02]" style="background-image: url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E');"></div>
+        
+        <div class="max-w-screen-xl mx-auto relative z-10">
+            <div class="text-center fade-in-up">
+                <h2 class="font-['Plus_Jakarta_Sans'] font-black text-5xl md:text-7xl lg:text-8xl tracking-tighter mb-6">
+                    Lanzamiento en <span class="text-[#B43C3A]">18 Días</span>
+                </h2>
+                <p class="text-xl md:text-2xl text-white/70 font-['DM_Sans'] font-medium max-w-2xl mx-auto leading-relaxed mb-16">
+                    Sé el primero en transformar tu negocio. Acceso anticipado limitado.
+                </p>
+                
+                <!-- Large Countdown -->
+                <div class="flex justify-center gap-8 mb-16">
+                    <div class="text-center">
+                        <div class="w-32 h-32 md:w-40 md:h-40 bg-gradient-to-br from-[#AC2121] to-[#B43C3A] rounded-3xl flex items-center justify-center mb-4 shadow-[0_0_40px_rgba(172,33,33,0.3)]">
+                            <span id="days-large" class="text-6xl md:text-7xl font-['Plus_Jakarta_Sans'] font-black text-white">18</span>
+                        </div>
+                        <span class="text-white/60 text-sm font-['DM_Sans'] uppercase tracking-wider">Días</span>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-32 h-32 md:w-40 md:h-40 bg-gradient-to-br from-[#AC2121] to-[#B43C3A] rounded-3xl flex items-center justify-center mb-4 shadow-[0_0_40px_rgba(172,33,33,0.3)]">
+                            <span id="hours-large" class="text-6xl md:text-7xl font-['Plus_Jakarta_Sans'] font-black text-white">07</span>
+                        </div>
+                        <span class="text-white/60 text-sm font-['DM_Sans'] uppercase tracking-wider">Horas</span>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-32 h-32 md:w-40 md:h-40 bg-gradient-to-br from-[#AC2121] to-[#B43C3A] rounded-3xl flex items-center justify-center mb-4 shadow-[0_0_40px_rgba(172,33,33,0.3)]">
+                            <span id="minutes-large" class="text-6xl md:text-7xl font-['Plus_Jakarta_Sans'] font-black text-white">32</span>
+                        </div>
+                        <span class="text-white/60 text-sm font-['DM_Sans'] uppercase tracking-wider">Minutos</span>
+                    </div>
+                </div>
+                
+                <!-- Status Badges -->
+                <div class="flex flex-wrap justify-center gap-4 mb-16">
+                    <div class="px-6 py-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-full flex items-center gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                        <span class="text-sm font-['Plus_Jakarta_Sans'] font-bold">Backend Completado</span>
+                    </div>
+                    <div class="px-6 py-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-full flex items-center gap-3">
+                        <div class="w-2 h-2 bg-[#B43C3A] rounded-full animate-pulse"></div>
+                        <span class="text-sm font-['Plus_Jakarta_Sans'] font-bold">App en Desarrollo</span>
+                    </div>
+                    <div class="px-6 py-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-full flex items-center gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                        <span class="text-sm font-['Plus_Jakarta_Sans'] font-bold">Beta Testing Próximamente</span>
+                    </div>
+                </div>
+                
+                <!-- Email Form -->
+                <div id="notify-form" class="max-w-xl mx-auto">
+                    <div class="backdrop-blur-xl bg-white/5 border border-white/10 rounded-3xl p-8">
+                        <h3 class="font-['Plus_Jakarta_Sans'] font-bold text-2xl mb-2">Acceso Anticipado</h3>
+                        <p class="text-white/70 font-['DM_Sans'] mb-6">Sé el primero en conocer cuando Turnera esté disponible</p>
+                        <form id="email-form" class="flex flex-col md:flex-row gap-3">
+                            <input type="email" id="email-input" placeholder="tu@email.com" required class="flex-1 bg-white/10 border border-white/20 rounded-full px-6 py-4 text-white placeholder:text-white/40 focus:outline-none focus:border-[#B43C3A] transition-colors font-['DM_Sans']">
+                            <button type="submit" class="bg-gradient-to-r from-[#AC2121] via-[#AE2120] to-[#B43C3A] text-white px-8 py-4 rounded-full font-['Plus_Jakarta_Sans'] font-bold text-sm uppercase tracking-widest hover:shadow-[0_0_30px_rgba(172,33,33,0.4)] transition-all duration-300 whitespace-nowrap">
+                                Notificarme
+                            </button>
+                        </form>
+                        <p id="form-message" class="text-sm text-white/60 font-['DM_Sans'] mt-4 hidden"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#1A1A1A] text-white py-12 px-6 md:px-12 border-t border-white/10">
+        <div class="max-w-screen-2xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <!-- Logo -->
+                <div class="flex items-center gap-2">
+                    <div class="w-10 h-10 bg-gradient-to-br from-[#AC2121] to-[#B43C3A] rounded-xl flex items-center justify-center text-white font-bold text-xl">
+                        T
+                    </div>
+                    <span class="font-['Plus_Jakarta_Sans'] font-bold text-xl tracking-tight">Turnera</span>
+                </div>
+                
+                <!-- Links -->
+                <div class="flex items-center gap-8 text-sm font-['DM_Sans']">
+                    <a href="#what-is" class="hover:text-[#B43C3A] transition-colors">Acerca de</a>
+                    <a href="#features" class="hover:text-[#B43C3A] transition-colors">Funcionalidades</a>
+                    <a href="#preview" class="hover:text-[#B43C3A] transition-colors">Vista Previa</a>
+                    <a href="#coming-soon" class="hover:text-[#B43C3A] transition-colors">Contacto</a>
+                </div>
+                
+                <!-- Social & Copyright -->
+                <div class="flex items-center gap-6">
+                    <a href="#" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-[#AC2121] hover:border-[#AC2121] transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-[#AC2121] hover:border-[#AC2121] transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+                    </a>
+                    <span class="text-white/40 text-xs font-['DM_Sans']">© 2026 Turnera</span>
+                </div>
+            </div>
+            
+            <!-- Legal Links -->
+            <div class="flex justify-center gap-6 mt-8 text-xs text-white/40 font-['DM_Sans']">
+                <a href="#" class="hover:text-white transition-colors">Privacidad</a>
+                <a href="#" class="hover:text-white transition-colors">Términos</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Countdown Timer (launches Feb 14, 2026 3PM EST)
+        const launchDate = new Date('February 14, 2026 15:00:00 EST').getTime();
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = launchDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+            // Update hero countdown
+            document.getElementById('days').textContent = String(days).padStart(2, '0');
+            document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+            document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+
+            // Update large countdown
+            document.getElementById('days-large').textContent = String(days).padStart(2, '0');
+            document.getElementById('hours-large').textContent = String(hours).padStart(2, '0');
+            document.getElementById('minutes-large').textContent = String(minutes).padStart(2, '0');
+        }
+
+        updateCountdown();
+        setInterval(updateCountdown, 60000); // Update every minute
+
+        // Scroll to Notify Form
+        function scrollToNotify() {
+            document.getElementById('notify-form').scrollIntoView({ behavior: 'smooth' });
+            setTimeout(() => {
+                document.getElementById('email-input').focus();
+            }, 500);
+        }
+
+        // Email Form Submission
+        const emailForm = document.getElementById('email-form');
+        const formMessage = document.getElementById('form-message');
+
+        emailForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('email-input').value;
+            
+            // Success state
+            formMessage.textContent = '¡Listo! Te notificaremos cuando Turnera esté disponible.';
+            formMessage.classList.remove('hidden');
+            formMessage.classList.add('text-[#4ade80]');
+            
+            // Reset form
+            emailForm.reset();
+            
+            // Hide message after 5 seconds
+            setTimeout(() => {
+                formMessage.classList.add('hidden');
+            }, 5000);
+        });
+
+        // Scroll-triggered animations (Intersection Observer)
+        const observerOptions = {
+            threshold: 0.2,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe fade-in elements
+        document.querySelectorAll('.fade-in-up').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Stagger animation for feature cards
+        const featureCards = document.querySelectorAll('.feature-card');
+        featureCards.forEach((card, index) => {
+            card.style.animationDelay = `${index * 0.1}s`;
+            observer.observe(card);
+        });
+
+        // Stagger animation for preview cards
+        const previewCards = document.querySelectorAll('.preview-card');
+        previewCards.forEach((card, index) => {
+            card.style.animationDelay = `${index * 0.1}s`;
+            observer.observe(card);
+        });
+
+        // Reveal text animation on load
+        window.addEventListener('load', () => {
+            document.querySelectorAll('.reveal-inner').forEach((el, index) => {
+                setTimeout(() => {
+                    el.style.animation = 'reveal 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards';
+                }, index * 100);
+            });
+        });
+    </script>
+<script id="dhws-dataInjector" src="/public/dhws-data-injector.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turnera - Sistema de Citas y Turnos para Barberías | Lanzamiento en 18 Días</title>
+    <meta name="description" content="Turnera transforma tu barbería en un negocio digital 24/7. Reservas online, pagos integrados, notificaciones inteligentes. Reduce no-shows 80%. Lanza en 18 días.">
+    <meta name="keywords" content="Turnera, sistema de citas barberías, gestión turnos salones, app barberías, reservas online 24/7, pagos online citas, software salones belleza">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Turnera - Sistema de Citas 24/7 para Barberías">
+    <meta property="og:description" content="La plataforma completa para gestionar citas y turnos. Lanzamiento en 18 días.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://turnera.com">
+    <meta property="og:image" content="https://turnera.com/og-image.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Turnera - Sistema de Citas para Barberías">
+    <meta name="twitter:description" content="Lanzamiento en 18 días. Reservas 24/7, pagos online, notificaciones inteligentes.">
+    <meta name="twitter:image" content="https://turnera.com/twitter-image.jpg">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&family=Reenie+Beanie&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Turnera",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "iOS, Android, Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/PreOrder"
+      },
+      "description": "Sistema completo de gestión de citas y turnos para barberías y salones con reservas online 24/7, pagos integrados y notificaciones inteligentes.",
+      "featureList": [
+        "Reservas online 24/7",
+        "Sistema de pagos integrado",
+        "Notificaciones automáticas",
+        "Gestión de múltiples especialistas",
+        "Métricas y analytics",
+        "Gestión de clientes y marketing"
+      ]
+    }
+    </script>
+  
+  <script type="module" async src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fturnerala9280back.builtwithrocket.new&_be=https%3A%2F%2Fappanalytics.rocket.new&_v=0.1.15"></script>
+  <script type="module" defer src="https://static.rocket.new/rocket-shot.js?v=0.0.2"></script>
+  </head>
+<body class="bg-[#FEFEFE] text-[#1A1A1A] antialiased selection:bg-[#AC2121] selection:text-white overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 backdrop-blur-md bg-[#FEFEFE]/80 border-b border-[#1A1A1A]/5">
+        <div class="max-w-screen-2xl mx-auto px-6 md:px-12 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#" class="flex items-center gap-2 group">
+                <div class="w-10 h-10 bg-gradient-to-br from-[#AC2121] via-[#AE2120] to-[#B43C3A] rounded-xl flex items-center justify-center text-white font-bold text-xl transition-transform group-hover:scale-105">
+                    T
+                </div>
+                <span class="font-['Plus_Jakarta_Sans'] font-bold text-xl tracking-tight hidden md:block">Turnera</span>
+            </a>
+            
+            <!-- CTA Button -->
+            <button onclick="scrollToNotify()" class="bg-gradient-to-r from-[#AC2121] via-[#AE2120] to-[#B43C3A] text-white px-6 py-2.5 rounded-full font-['Plus_Jakarta_Sans'] font-bold text-sm uppercase tracking-wider hover:shadow-[0_0_20px_rgba(172,33,33,0.4)] transition-all duration-300 hover:scale-105">
+                Notificarme
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="relative min-h-screen flex items-center justify-center px-6 md:px-12 pt-32 pb-20 overflow-hidden">
+        <!-- Animated Gradient Background -->
+        <div class="absolute inset-0 bg-gradient-to-br from-[#AC2121] via-[#AE2120] to-[#B43C3A] opacity-90"></div>
+        
+        <!-- Noise Texture -->
+        <div class="absolute inset-0 opacity-[0.03]" style="background-image: url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E');"></div>
+        
+        <!-- Content -->
+        <div class="relative z-10 max-w-screen-2xl mx-auto w-full">
+            <div class="text-center mb-16">
+                <!-- Badge -->
+                <div class="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full mb-8 animate-pulse">
+                    <div class="w-2 h-2 bg-[#FEFEFE] rounded-full"></div>
+                    <span class="text-white text-xs font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-widest">Lanzamiento Inminente</span>
+                </div>
+                
+                <!-- Main Headline -->
+                <div class="reveal-container mb-6">
+                    <h1 class="font-['Plus_Jakarta_Sans'] font-black text-6xl md:text-8xl lg:text-9xl leading-[0.85] tracking-tighter text-white uppercase">
+                        <span class="block reveal-text"><span class="reveal-inner">Turnera</span></span>
+                        <span class="block reveal-text" style="animation-delay: 0.1s;"><span class="reveal-inner">está</span></span>
+                        <span class="block reveal-text" style="animation-delay: 0.2s;">
+                            <span class="reveal-inner font-['Reenie_Beanie'] font-normal text-7xl md:text-9xl normal-case">llegando</span>
+                        </span>
+                    </h1>
+                </div>
+                
+                <!-- Subheadline -->
+                <p class="text-xl md:text-2xl text-white/90 font-['DM_Sans'] font-medium max-w-3xl mx-auto leading-relaxed mb-12">
+                    La revolución en gestión de citas y turnos para barberías y salones de belleza
+                </p>
+                
+                <!-- CTA Button -->
+                <button onclick="scrollToNotify()" class="bg-white text-[#AC2121] px-10 py-5 rounded-full font-['Plus_Jakarta_Sans'] font-black text-sm uppercase tracking-widest hover:bg-[#FEFEFE] hover:shadow-[0_0_40px_rgba(255,255,255,0.3)] transition-all duration-300 inline-flex items-center gap-3 group">
+                    <span>Quiero ser notificado</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="group-hover:translate-x-1 transition-transform"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </button>
+            </div>
+            
+            <!-- Floating Countdown Card -->
+            <div class="max-w-md mx-auto backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl p-8 shadow-2xl">
+                <div class="text-center">
+                    <p class="text-white/70 text-sm font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-widest mb-4">Lanzamiento en</p>
+                    <div id="countdown" class="flex justify-center gap-6 mb-4">
+                        <div class="flex flex-col items-center">
+                            <div class="w-20 h-20 bg-white/20 backdrop-blur-md rounded-2xl flex items-center justify-center mb-2">
+                                <span id="days" class="text-4xl font-['Plus_Jakarta_Sans'] font-black text-white">18</span>
+                            </div>
+                            <span class="text-white/70 text-xs font-['DM_Sans'] uppercase tracking-wider">Días</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div class="w-20 h-20 bg-white/20 backdrop-blur-md rounded-2xl flex items-center justify-center mb-2">
+                                <span id="hours" class="text-4xl font-['Plus_Jakarta_Sans'] font-black text-white">07</span>
+                            </div>
+                            <span class="text-white/70 text-xs font-['DM_Sans'] uppercase tracking-wider">Horas</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div class="w-20 h-20 bg-white/20 backdrop-blur-md rounded-2xl flex items-center justify-center mb-2">
+                                <span id="minutes" class="text-4xl font-['Plus_Jakarta_Sans'] font-black text-white">32</span>
+                            </div>
+                            <span class="text-white/70 text-xs font-['DM_Sans'] uppercase tracking-wider">Min</span>
+                        </div>
+                    </div>
+                    <p class="text-white/60 text-sm font-['DM_Sans']">Viernes 14 de Febrero, 2026 • 3PM EST</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- What is Turnera Section -->
+    <section id="what-is" class="py-24 md:py-32 px-6 md:px-12 border-b border-[#1A1A1A]/5">
+        <div class="max-w-screen-xl mx-auto">
+            <div class="text-center mb-16 fade-in-up">
+                <span class="inline-block px-4 py-1.5 bg-[#AC2121]/10 text-[#AC2121] rounded-full text-xs font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-widest mb-6">El Sistema Completo</span>
+                <h2 class="font-['Plus_Jakarta_Sans'] font-black text-5xl md:text-7xl tracking-tighter mb-6">
+                    ¿Qué es <span class="text-[#AC2121]">Turnera</span>?
+                </h2>
+                <p class="text-xl md:text-2xl text-[#1A1A1A]/70 font-['DM_Sans'] font-medium max-w-3xl mx-auto leading-relaxed">
+                    La plataforma completa que transforma tu barbería o salón en un negocio digital 24/7. 
+                    <span class="text-[#AC2121] font-semibold">Nunca más pierdas un cliente. Nunca más persigas no-shows.</span>
+                </p>
+            </div>
+            
+            <!-- Bento Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 fade-in-up">
+                <div class="bg-gradient-to-br from-[#AC2121]/5 to-[#B43C3A]/5 border border-[#AC2121]/10 rounded-3xl p-8 hover:shadow-[0_0_30px_rgba(172,33,33,0.15)] transition-all duration-300 hover:scale-[1.02]">
+                    <div class="w-16 h-16 bg-gradient-to-br from-[#AC2121] to-[#B43C3A] rounded-2xl flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M8 2v4"/><path d="M16 2v4"/><path d="M3 10h18"/></svg>
+                    </div>
+                    <h3 class="font-['Plus_Jakarta_Sans'] font-bold text-2xl mb-3">Página de Reserva 24/7</h3>
+                    <p class="text-[#1A1A1A]/70 font-['DM_Sans'] leading-relaxed">Clientes pueden agendar citas en cualquier momento, incluso cuando tu negocio está cerrado</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-[#AC2121]/5 to-[#B43C3A]/5 border border-[#AC2121]/10 rounded-3xl p-8 hover:shadow-[0_0_30px_rgba(172,33,33,0.15)] transition-all duration-300 hover:scale-[1.02]">
+                    <div class="w-16 h-16 bg-gradient-to-br from-[#AC2121] to-[#B43C3A] rounded-2xl flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+                    </div>
+                    <h3 class="font-['Plus_Jakarta_Sans'] font-bold text-2xl mb-3">Cola Inteligente</h3>
+                    <p class="text-[#1A1A1A]/70 font-['DM_Sans'] leading-relaxed">Sistema híbrido que combina citas programadas y turnos presenciales en tiempo real</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-[#AC2121]/5 to-[#B43C3A]/5 border border-[#AC2121]/10 rounded-3xl p-8 hover:shadow-[0_0_30px_rgba(172,33,33,0.15)] transition-all duration-300 hover:scale-[1.02]">
+                    <div class="w-16 h-16 bg-gradient-to-br from-[#AC2121] to-[#B43C3A] rounded-2xl flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="5" rx="2"/><path d="M2 10h20"/></svg>
+                    </div>
+                    <h3 class="font-['Plus_Jakarta_Sans'] font-bold text-2xl mb-3">Pagos Integrados</h3>
+                    <p class="text-[#1A1A1A]/70 font-['DM_Sans'] leading-relaxed">Los clientes pagan al reservar. Reduce no-shows hasta en un 80%</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-[#AC2121]/5 to-[#B43C3A]/5 border border-[#AC2121]/10 rounded-3xl p-8 hover:shadow-[0_0_30px_rgba(172,33,33,0.15)] transition-all duration-300 hover:scale-[1.02]">
+                    <div class="w-16 h-16 bg-gradient-to-br from-[#AC2121] to-[#B43C3A] rounded-2xl flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+                    </div>
+                    <h3 class="font-['Plus_Jakarta_Sans'] font-bold text-2xl mb-3">Notificaciones Inteligentes</h3>
+                    <p class="text-[#1A1A1A]/70 font-['DM_Sans'] leading-relaxed">Recordatorios automáticos, promociones personalizadas, reactivación de clientes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features Section -->
+    <section id="features" class="py-24 md:py-32 px-6 md:px-12 bg-gradient-to-br from-[#1A1A1A] to-[#2A2A2A] text-white relative overflow-hidden">
+        <!-- Noise Texture -->
+        <div class="absolute inset-0 opacity-[0.02]" style="background-image: url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E');"></div>
+        
+        <div class="max-w-screen-xl mx-auto relative z-10">
+            <div class="text-center mb-20 fade-in-up">
+                <span class="inline-block px-4 py-1.5 bg-[#AC2121] text-white rounded-full text-xs font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-widest mb-6">Funcionalidades Clave</span>
+                <h2 class="font-['Plus_Jakarta_Sans'] font-black text-5xl md:text-7xl tracking-tighter mb-6">
+                    Diseñado para <span class="text-[#B43C3A]">maximizar</span> tus ingresos
+                </h2>
+                <p class="text-xl md:text-2xl text-white/70 font-['DM_Sans'] font-medium max-w-3xl mx-auto leading-relaxed">
+                    Cada funcionalidad está pensada para ayudarte a ganar más dinero y trabajar menos
+                </p>
+            </div>
+            
+            <!-- Features Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 feature-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card backdrop-blur-xl bg-white/5 border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-all duration-300 group relative overflow-hidden">
+                    <div class="absolute top-4 right-4">
+                        <span class="px-3 py-1 bg-[#AC2121] text-white text-xs font-['Plus_Jakarta_Sans'] font-bold rounded-full">ROI+</span>
+                    </div>
+                    <div class="w-16 h-16 bg-gradient-to-br from-[#AC2121] to-[#B43C3A] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-6.219-8.56"/><circle cx="12" cy="12" r="1"/></svg>
+                    </div>
+                    <h3 class="font-['Plus_Jakarta_Sans'] font-bold text-2xl mb-3 group-hover:text-[#B43C3A] transition-colors">Reserva Online 24/7</h3>
+                    <p class="text-white/70 font-['DM_Sans'] mb-4 leading-relaxed">Tu negocio nunca cierra. Captura reservas a las 2 AM mientras duermes.</p>
+                    <div class="text-[#B43C3A] font-['Plus_Jakarta_Sans'] font-bold text-sm">+40% más reservas</div>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="feature-card backdrop-blur-xl bg-white/5 border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-all duration-300 group relative overflow-hidden">
+                    <div class="absolute top-4 right-4">
+                        <span class="px-3 py-1 bg-[#AC2121] text-white text-xs font-['Plus_Jakarta_Sans'] font-bold rounded-full">Crítico</span>
+                    </div>
+                    <div class="w-16 h-16 bg-gradient-to-br from-[#AC2121] to-[#B43C3A] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="5" rx="2"/><path d="M2 10h20"/></svg>
+                    </div>
+                    <h3 class="font-['Plus_Jakarta_Sans'] font-bold text-2xl mb-3 group-hover:text-[#B43C3A] transition-colors">Pagos Online</h3>
+                    <p class="text-white/70 font-['DM_Sans'] mb-4 leading-relaxed">Los clientes pagan al reservar. Depósitos o pago completo para asegurar llegada.</p>
+                    <div class="text-[#B43C3A] font-['Plus_Jakarta_Sans'] font-bold text-sm">-80% no-shows</div>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="feature-card backdrop-blur-xl bg-white/5 border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-all duration-300 group relative overflow-hidden">
+                    <div class="absolute top-4 right-4">
+                        <span class="px-3 py-1 bg-[#AC2121] text-white text-xs font-['Plus_Jakarta_Sans'] font-bold rounded-full">Auto</span>
+                    </div>
+                    <div class="w-16 h-16 bg-gradient-to-br from-[#AC2121] to-[#B43C3A] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+                    </div>
+                    <h3 class="font-['Plus_Jakarta_Sans'] font-bold text-2xl mb-3 group-hover:text-[#B43C3A] transition-colors">Notificaciones Inteligentes</h3>
+                    <p class="text-white/70 font-['DM_Sans'] mb-4 leading-relaxed">Recordatorios automáticos, promociones personalizadas, reactivación de clientes inactivos.</p>
+                    <div class="text-[#B43C3A] font-['Plus_Jakarta_Sans'] font-bold text-sm">Vende mientras duermes</div>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="feature-card backdrop-blur-xl bg-white/5 border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-all duration-300 group relative overflow-hidden">
+                    <div class="w-16 h-16 bg-gradient-to-br from-[#AC2121] to-[#B43C3A] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <h3 class="font-['Plus_Jakarta_Sans'] font-bold text-2xl mb-3 group-hover:text-[#B43C3A] transition-colors">Múltiples Especialistas</h3>
+                    <p class="text-white/70 font-['DM_Sans'] mb-4 leading-relaxed">Gestiona 10 barberos tan fácil como 1. Maximiza tu capacidad de atención.</p>
+                    <div class="text-[#B43C3A] font-['Plus_Jakarta_Sans'] font-bold text-sm">Más capacidad = más ingresos</div>
+                </div>
+                
+                <!-- Feature 5 -->
+                <div class="feature-card backdrop-blur-xl bg-white/5 border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-all duration-300 group relative overflow-hidden">
+                    <div class="w-16 h-16 bg-gradient-to-br from-[#AC2121] to-[#B43C3A] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    </div>
+                    <h3 class="font-['Plus_Jakarta_Sans'] font-bold text-2xl mb-3 group-hover:text-[#B43C3A] transition-colors">Base de Datos de Clientes</h3>
+                    <p class="text-white/70 font-['DM_Sans'] mb-4 leading-relaxed">Identifica clientes VIP, segmenta audiencias, envía promociones dirigidas.</p>
+                    <div class="text-[#B43C3A] font-['Plus_Jakarta_Sans'] font-bold text-sm">Marketing integrado</div>
+                </div>
+                
+                <!-- Feature 6 -->
+                <div class="feature-card backdrop-blur-xl bg-white/5 border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-all duration-300 group relative overflow-hidden">
+                    <div class="w-16 h-16 bg-gradient-to-br from-[#AC2121] to-[#B43C3A] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+                    </div>
+                    <h3 class="font-['Plus_Jakarta_Sans'] font-bold text-2xl mb-3 group-hover:text-[#B43C3A] transition-colors">Métricas en Tiempo Real</h3>
+                    <p class="text-white/70 font-['DM_Sans'] mb-4 leading-relaxed">Dashboard con clientes frecuentes, servicios populares, ingresos por cliente.</p>
+                    <div class="text-[#B43C3A] font-['Plus_Jakarta_Sans'] font-bold text-sm">Decisiones basadas en datos</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preview Section -->
+    <section id="preview" class="py-24 md:py-32 px-6 md:px-12 border-b border-[#1A1A1A]/5">
+        <div class="max-w-screen-xl mx-auto">
+            <div class="text-center mb-20 fade-in-up">
+                <span class="inline-block px-4 py-1.5 bg-[#AC2121]/10 text-[#AC2121] rounded-full text-xs font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-widest mb-6">Vista Previa Exclusiva</span>
+                <h2 class="font-['Plus_Jakarta_Sans'] font-black text-5xl md:text-7xl tracking-tighter mb-6">
+                    Así funciona <span class="text-[#AC2121]">Turnera</span>
+                </h2>
+                <p class="text-xl md:text-2xl text-[#1A1A1A]/70 font-['DM_Sans'] font-medium max-w-3xl mx-auto leading-relaxed">
+                    Descubre cómo Turnera transformará tu negocio y la experiencia de tus clientes
+                </p>
+            </div>
+            
+            <!-- Preview Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 preview-grid">
+                <!-- Client Flow Cards -->
+                <div class="preview-card backdrop-blur-md bg-gradient-to-br from-[#AC2121]/5 to-[#B43C3A]/5 border border-[#AC2121]/20 rounded-3xl p-6 hover:shadow-[0_0_30px_rgba(172,33,33,0.2)] transition-all duration-300 group relative overflow-hidden">
+                    <div class="absolute top-3 right-3">
+                        <span class="px-2 py-1 bg-[#AC2121] text-white text-[10px] font-['Plus_Jakarta_Sans'] font-bold rounded-full">Cliente</span>
+                    </div>
+                    <div class="flex items-center justify-center mb-6">
+                        <div class="w-20 h-20 bg-gradient-to-br from-[#AC2121]/10 to-[#B43C3A]/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#AC2121" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                        </div>
+                    </div>
+                    <h3 class="font-['Plus_Jakarta_Sans'] font-bold text-lg mb-2 text-center">Buscar & Reservar</h3>
+                    <p class="text-[#1A1A1A]/60 font-['DM_Sans'] text-sm text-center leading-relaxed">El cliente encuentra tu negocio online y ve horarios disponibles 24/7</p>
+                </div>
+                
+                <div class="preview-card backdrop-blur-md bg-gradient-to-br from-[#AC2121]/5 to-[#B43C3A]/5 border border-[#AC2121]/20 rounded-3xl p-6 hover:shadow-[0_0_30px_rgba(172,33,33,0.2)] transition-all duration-300 group relative overflow-hidden">
+                    <div class="absolute top-3 right-3">
+                        <span class="px-2 py-1 bg-[#AC2121] text-white text-[10px] font-['Plus_Jakarta_Sans'] font-bold rounded-full">Cliente</span>
+                    </div>
+                    <div class="flex items-center justify-center mb-6">
+                        <div class="w-20 h-20 bg-gradient-to-br from-[#AC2121]/10 to-[#B43C3A]/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#AC2121" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                        </div>
+                    </div>
+                    <h3 class="font-['Plus_Jakarta_Sans'] font-bold text-lg mb-2 text-center">Pagar Online</h3>
+                    <p class="text-[#1A1A1A]/60 font-['DM_Sans'] text-sm text-center leading-relaxed">Pago seguro con tarjeta o wallet digital. Depósito o pago completo</p>
+                </div>
+                
+                <div class="preview-card backdrop-blur-md bg-gradient-to-br from-[#AC2121]/5 to-[#B43C3A]/5 border border-[#AC2121]/20 rounded-3xl p-6 hover:shadow-[0_0_30px_rgba(172,33,33,0.2)] transition-all duration-300 group relative overflow-hidden">
+                    <div class="absolute top-3 right-3">
+                        <span class="px-2 py-1 bg-[#AC2121] text-white text-[10px] font-['Plus_Jakarta_Sans'] font-bold rounded-full">Cliente</span>
+                    </div>
+                    <div class="flex items-center justify-center mb-6">
+                        <div class="w-20 h-20 bg-gradient-to-br from-[#AC2121]/10 to-[#B43C3A]/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#AC2121" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+                        </div>
+                    </div>
+                    <h3 class="font-['Plus_Jakarta_Sans'] font-bold text-lg mb-2 text-center">Recibir Notificación</h3>
+                    <p class="text-[#1A1A1A]/60 font-['DM_Sans'] text-sm text-center leading-relaxed">Confirmación instantánea + recordatorios automáticos 24h y 1h antes</p>
+                </div>
+                
+                <div class="preview-card backdrop-blur-md bg-gradient-to-br from-[#AC2121]/5 to-[#B43C3A]/5 border border-[#AC2121]/20 rounded-3xl p-6 hover:shadow-[0_0_30px_rgba(172,33,33,0.2)] transition-all duration-300 group relative overflow-hidden">
+                    <div class="absolute top-3 right-3">
+                        <span class="px-2 py-1 bg-[#AC2121] text-white text-[10px] font-['Plus_Jakarta_Sans'] font-bold rounded-full">Cliente</span>
+                    </div>
+                    <div class="flex items-center justify-center mb-6">
+                        <div class="w-20 h-20 bg-gradient-to-br from-[#AC2121]/10 to-[#B43C3A]/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#AC2121" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h18v18H3zM15 9l-6 6m0-6l6 6"/></svg>
+                        </div>
+                    </div>
+                    <h3 class="font-['Plus_Jakarta_Sans'] font-bold text-lg mb-2 text-center">Ver Posición</h3>
+                    <p class="text-[#1A1A1A]/60 font-['DM_Sans'] text-sm text-center leading-relaxed">Cola en tiempo real con posición exacta y tiempo de espera estimado</p>
+                </div>
+                
+                <!-- Business Flow Cards -->
+                <div class="preview-card backdrop-blur-md bg-gradient-to-br from-[#B43C3A]/5 to-[#AC2121]/5 border border-[#B43C3A]/20 rounded-3xl p-6 hover:shadow-[0_0_30px_rgba(180,60,58,0.2)] transition-all duration-300 group relative overflow-hidden">
+                    <div class="absolute top-3 right-3">
+                        <span class="px-2 py-1 bg-[#B43C3A] text-white text-[10px] font-['Plus_Jakarta_Sans'] font-bold rounded-full">Negocio</span>
+                    </div>
+                    <div class="flex items-center justify-center mb-6">
+                        <div class="w-20 h-20 bg-gradient-to-br from-[#B43C3A]/10 to-[#AC2121]/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#B43C3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+                        </div>
+                    </div>
+                    <h3 class="font-['Plus_Jakarta_Sans'] font-bold text-lg mb-2 text-center">Dashboard en Vivo</h3>
+                    <p class="text-[#1A1A1A]/60 font-['DM_Sans'] text-sm text-center leading-relaxed">Ve todas las reservas, walk-ins e ingresos en tiempo real</p>
+                </div>
+                
+                <div class="preview-card backdrop-blur-md bg-gradient-to-br from-[#B43C3A]/5 to-[#AC2121]/5 border border-[#B43C3A]/20 rounded-3xl p-6 hover:shadow-[0_0_30px_rgba(180,60,58,0.2)] transition-all duration-300 group relative overflow-hidden">
+                    <div class="absolute top-3 right-3">
+                        <span class="px-2 py-1 bg-[#B43C3A] text-white text-[10px] font-['Plus_Jakarta_Sans'] font-bold rounded-full">Negocio</span>
+                    </div>
+                    <div class="flex items-center justify-center mb-6">
+                        <div class="w-20 h-20 bg-gradient-to-br from-[#B43C3A]/10 to-[#AC2121]/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#B43C3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="2" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                        </div>
+                    </div>
+                    <h3 class="font-['Plus_Jakarta_Sans'] font-bold text-lg mb-2 text-center">Gestionar Cola</h3>
+                    <p class="text-[#1A1A1A]/60 font-['DM_Sans'] text-sm text-center leading-relaxed">Cola inteligente combina citas agendadas + turnos presenciales</p>
+                </div>
+                
+                <div class="preview-card backdrop-blur-md bg-gradient-to-br from-[#B43C3A]/5 to-[#AC2121]/5 border border-[#B43C3A]/20 rounded-3xl p-6 hover:shadow-[0_0_30px_rgba(180,60,58,0.2)] transition-all duration-300 group relative overflow-hidden">
+                    <div class="absolute top-3 right-3">
+                        <span class="px-2 py-1 bg-[#B43C3A] text-white text-[10px] font-['Plus_Jakarta_Sans'] font-bold rounded-full">Negocio</span>
+                    </div>
+                    <div class="flex items-center justify-center mb-6">
+                        <div class="w-20 h-20 bg-gradient-to-br from-[#B43C3A]/10 to-[#AC2121]/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#B43C3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+                        </div>
+                    </div>
+                    <h3 class="font-['Plus_Jakarta_Sans'] font-bold text-lg mb-2 text-center">Analizar Métricas</h3>
+                    <p class="text-[#1A1A1A]/60 font-['DM_Sans'] text-sm text-center leading-relaxed">Identifica servicios top, clientes VIP, horas pico en tiempo real</p>
+                </div>
+                
+                <div class="preview-card backdrop-blur-md bg-gradient-to-br from-[#B43C3A]/5 to-[#AC2121]/5 border border-[#B43C3A]/20 rounded-3xl p-6 hover:shadow-[0_0_30px_rgba(180,60,58,0.2)] transition-all duration-300 group relative overflow-hidden">
+                    <div class="absolute top-3 right-3">
+                        <span class="px-2 py-1 bg-[#B43C3A] text-white text-[10px] font-['Plus_Jakarta_Sans'] font-bold rounded-full">Negocio</span>
+                    </div>
+                    <div class="flex items-center justify-center mb-6">
+                        <div class="w-20 h-20 bg-gradient-to-br from-[#B43C3A]/10 to-[#AC2121]/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#B43C3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg>
+                        </div>
+                    </div>
+                    <h3 class="font-['Plus_Jakarta_Sans'] font-bold text-lg mb-2 text-center">Enviar Promos</h3>
+                    <p class="text-[#1A1A1A]/60 font-['DM_Sans'] text-sm text-center leading-relaxed">Reactiva clientes inactivos con ofertas dirigidas y personalizadas</p>
+                </div>
+            </div>
+            
+            <!-- CTA -->
+            <div class="text-center mt-16 fade-in-up">
+                <button onclick="scrollToNotify()" class="bg-gradient-to-r from-[#AC2121] via-[#AE2120] to-[#B43C3A] text-white px-10 py-5 rounded-full font-['Plus_Jakarta_Sans'] font-black text-sm uppercase tracking-widest hover:shadow-[0_0_40px_rgba(172,33,33,0.4)] transition-all duration-300 inline-flex items-center gap-3 group">
+                    <span>Quiero ser el primero en probarlo</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="group-hover:translate-x-1 transition-transform"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coming Soon + Countdown Section -->
+    <section id="coming-soon" class="py-24 md:py-32 px-6 md:px-12 bg-gradient-to-br from-[#1A1A1A] to-[#2A2A2A] text-white relative overflow-hidden">
+        <!-- Noise Texture -->
+        <div class="absolute inset-0 opacity-[0.02]" style="background-image: url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E');"></div>
+        
+        <div class="max-w-screen-xl mx-auto relative z-10">
+            <div class="text-center fade-in-up">
+                <h2 class="font-['Plus_Jakarta_Sans'] font-black text-5xl md:text-7xl lg:text-8xl tracking-tighter mb-6">
+                    Lanzamiento en <span class="text-[#B43C3A]">18 Días</span>
+                </h2>
+                <p class="text-xl md:text-2xl text-white/70 font-['DM_Sans'] font-medium max-w-2xl mx-auto leading-relaxed mb-16">
+                    Sé el primero en transformar tu negocio. Acceso anticipado limitado.
+                </p>
+                
+                <!-- Large Countdown -->
+                <div class="flex justify-center gap-8 mb-16">
+                    <div class="text-center">
+                        <div class="w-32 h-32 md:w-40 md:h-40 bg-gradient-to-br from-[#AC2121] to-[#B43C3A] rounded-3xl flex items-center justify-center mb-4 shadow-[0_0_40px_rgba(172,33,33,0.3)]">
+                            <span id="days-large" class="text-6xl md:text-7xl font-['Plus_Jakarta_Sans'] font-black text-white">18</span>
+                        </div>
+                        <span class="text-white/60 text-sm font-['DM_Sans'] uppercase tracking-wider">Días</span>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-32 h-32 md:w-40 md:h-40 bg-gradient-to-br from-[#AC2121] to-[#B43C3A] rounded-3xl flex items-center justify-center mb-4 shadow-[0_0_40px_rgba(172,33,33,0.3)]">
+                            <span id="hours-large" class="text-6xl md:text-7xl font-['Plus_Jakarta_Sans'] font-black text-white">07</span>
+                        </div>
+                        <span class="text-white/60 text-sm font-['DM_Sans'] uppercase tracking-wider">Horas</span>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-32 h-32 md:w-40 md:h-40 bg-gradient-to-br from-[#AC2121] to-[#B43C3A] rounded-3xl flex items-center justify-center mb-4 shadow-[0_0_40px_rgba(172,33,33,0.3)]">
+                            <span id="minutes-large" class="text-6xl md:text-7xl font-['Plus_Jakarta_Sans'] font-black text-white">32</span>
+                        </div>
+                        <span class="text-white/60 text-sm font-['DM_Sans'] uppercase tracking-wider">Minutos</span>
+                    </div>
+                </div>
+                
+                <!-- Status Badges -->
+                <div class="flex flex-wrap justify-center gap-4 mb-16">
+                    <div class="px-6 py-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-full flex items-center gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                        <span class="text-sm font-['Plus_Jakarta_Sans'] font-bold">Backend Completado</span>
+                    </div>
+                    <div class="px-6 py-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-full flex items-center gap-3">
+                        <div class="w-2 h-2 bg-[#B43C3A] rounded-full animate-pulse"></div>
+                        <span class="text-sm font-['Plus_Jakarta_Sans'] font-bold">App en Desarrollo</span>
+                    </div>
+                    <div class="px-6 py-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-full flex items-center gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                        <span class="text-sm font-['Plus_Jakarta_Sans'] font-bold">Beta Testing Próximamente</span>
+                    </div>
+                </div>
+                
+                <!-- Email Form -->
+                <div id="notify-form" class="max-w-xl mx-auto">
+                    <div class="backdrop-blur-xl bg-white/5 border border-white/10 rounded-3xl p-8">
+                        <h3 class="font-['Plus_Jakarta_Sans'] font-bold text-2xl mb-2">Acceso Anticipado</h3>
+                        <p class="text-white/70 font-['DM_Sans'] mb-6">Sé el primero en conocer cuando Turnera esté disponible</p>
+                        <form id="email-form" class="flex flex-col md:flex-row gap-3">
+                            <input type="email" id="email-input" placeholder="tu@email.com" required class="flex-1 bg-white/10 border border-white/20 rounded-full px-6 py-4 text-white placeholder:text-white/40 focus:outline-none focus:border-[#B43C3A] transition-colors font-['DM_Sans']">
+                            <button type="submit" class="bg-gradient-to-r from-[#AC2121] via-[#AE2120] to-[#B43C3A] text-white px-8 py-4 rounded-full font-['Plus_Jakarta_Sans'] font-bold text-sm uppercase tracking-widest hover:shadow-[0_0_30px_rgba(172,33,33,0.4)] transition-all duration-300 whitespace-nowrap">
+                                Notificarme
+                            </button>
+                        </form>
+                        <p id="form-message" class="text-sm text-white/60 font-['DM_Sans'] mt-4 hidden"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#1A1A1A] text-white py-12 px-6 md:px-12 border-t border-white/10">
+        <div class="max-w-screen-2xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <!-- Logo -->
+                <div class="flex items-center gap-2">
+                    <div class="w-10 h-10 bg-gradient-to-br from-[#AC2121] to-[#B43C3A] rounded-xl flex items-center justify-center text-white font-bold text-xl">
+                        T
+                    </div>
+                    <span class="font-['Plus_Jakarta_Sans'] font-bold text-xl tracking-tight">Turnera</span>
+                </div>
+                
+                <!-- Links -->
+                <div class="flex items-center gap-8 text-sm font-['DM_Sans']">
+                    <a href="#what-is" class="hover:text-[#B43C3A] transition-colors">Acerca de</a>
+                    <a href="#features" class="hover:text-[#B43C3A] transition-colors">Funcionalidades</a>
+                    <a href="#preview" class="hover:text-[#B43C3A] transition-colors">Vista Previa</a>
+                    <a href="#coming-soon" class="hover:text-[#B43C3A] transition-colors">Contacto</a>
+                </div>
+                
+                <!-- Social & Copyright -->
+                <div class="flex items-center gap-6">
+                    <a href="#" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-[#AC2121] hover:border-[#AC2121] transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-[#AC2121] hover:border-[#AC2121] transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+                    </a>
+                    <span class="text-white/40 text-xs font-['DM_Sans']">© 2026 Turnera</span>
+                </div>
+            </div>
+            
+            <!-- Legal Links -->
+            <div class="flex justify-center gap-6 mt-8 text-xs text-white/40 font-['DM_Sans']">
+                <a href="#" class="hover:text-white transition-colors">Privacidad</a>
+                <a href="#" class="hover:text-white transition-colors">Términos</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Countdown Timer (launches Feb 14, 2026 3PM EST)
+        const launchDate = new Date('February 14, 2026 15:00:00 EST').getTime();
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = launchDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+            // Update hero countdown
+            document.getElementById('days').textContent = String(days).padStart(2, '0');
+            document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+            document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+
+            // Update large countdown
+            document.getElementById('days-large').textContent = String(days).padStart(2, '0');
+            document.getElementById('hours-large').textContent = String(hours).padStart(2, '0');
+            document.getElementById('minutes-large').textContent = String(minutes).padStart(2, '0');
+        }
+
+        updateCountdown();
+        setInterval(updateCountdown, 60000); // Update every minute
+
+        // Scroll to Notify Form
+        function scrollToNotify() {
+            document.getElementById('notify-form').scrollIntoView({ behavior: 'smooth' });
+            setTimeout(() => {
+                document.getElementById('email-input').focus();
+            }, 500);
+        }
+
+        // Email Form Submission
+        const emailForm = document.getElementById('email-form');
+        const formMessage = document.getElementById('form-message');
+
+        emailForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('email-input').value;
+            
+            // Success state
+            formMessage.textContent = '¡Listo! Te notificaremos cuando Turnera esté disponible.';
+            formMessage.classList.remove('hidden');
+            formMessage.classList.add('text-[#4ade80]');
+            
+            // Reset form
+            emailForm.reset();
+            
+            // Hide message after 5 seconds
+            setTimeout(() => {
+                formMessage.classList.add('hidden');
+            }, 5000);
+        });
+
+        // Scroll-triggered animations (Intersection Observer)
+        const observerOptions = {
+            threshold: 0.2,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe fade-in elements
+        document.querySelectorAll('.fade-in-up').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Stagger animation for feature cards
+        const featureCards = document.querySelectorAll('.feature-card');
+        featureCards.forEach((card, index) => {
+            card.style.animationDelay = `${index * 0.1}s`;
+            observer.observe(card);
+        });
+
+        // Stagger animation for preview cards
+        const previewCards = document.querySelectorAll('.preview-card');
+        previewCards.forEach((card, index) => {
+            card.style.animationDelay = `${index * 0.1}s`;
+            observer.observe(card);
+        });
+
+        // Reveal text animation on load
+        window.addEventListener('load', () => {
+            document.querySelectorAll('.reveal-inner').forEach((el, index) => {
+                setTimeout(() => {
+                    el.style.animation = 'reveal 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards';
+                }, index * 100);
+            });
+        });
+    </script>
+<script id="dhws-dataInjector" src="/public/dhws-data-injector.js"></script>
+</body>
+</html>

@@ -85,13 +85,13 @@ export default function WhatIsTurnera() {
         </div>
 
         {/* Features Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 fade-in-up">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 fade-in-up">
           {features.map((feature, index) => {
             const Icon = feature.icon;
             return (
               <div
                 key={index}
-                className="group relative bg-white/60 backdrop-blur-xl border border-primary/20 rounded-3xl p-10 hover:bg-white/80 hover:border-primary/30 hover:shadow-[0_20px_60px_rgba(172,33,33,0.2)] transition-all duration-500 hover:scale-[1.03] hover:-translate-y-1 overflow-hidden"
+                className="group relative bg-white border border-primary/20 rounded-3xl p-8 md:p-10 hover:border-primary/30 hover:shadow-[0_20px_60px_rgba(172,33,33,0.2)] transition-all duration-500 hover:scale-[1.03] hover:-translate-y-1 overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.08)]"
               >
                 {/* Glassmorphism overlay effect */}
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary-light/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
@@ -100,19 +100,19 @@ export default function WhatIsTurnera() {
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 pointer-events-none" />
                 
                 {/* Icon container with enhanced depth */}
-                <div className="relative w-20 h-20 bg-gradient-to-br from-primary via-primary-dark to-primary-light rounded-2xl flex items-center justify-center mb-8 shadow-[0_8px_24px_rgba(172,33,33,0.25)] group-hover:shadow-[0_12px_32px_rgba(172,33,33,0.35)] group-hover:scale-110 transition-all duration-500">
-                  <Icon className="w-9 h-9 text-white relative z-10" />
+                <div className="relative w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-primary via-primary-dark to-primary-light rounded-2xl flex items-center justify-center mb-6 md:mb-8 shadow-[0_8px_24px_rgba(172,33,33,0.25)] group-hover:shadow-[0_12px_32px_rgba(172,33,33,0.35)] group-hover:scale-110 transition-all duration-500">
+                  <Icon className="w-7 h-7 md:w-9 md:h-9 text-white relative z-10" />
                   {/* Icon glow effect */}
                   <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent rounded-2xl" />
                 </div>
                 
                 {/* Title with better hierarchy */}
-                <h3 className="relative font-sans font-bold text-2xl md:text-2xl mb-4 text-text leading-tight group-hover:text-primary transition-colors duration-300">
+                <h3 className="relative font-sans font-bold text-xl md:text-2xl mb-3 md:mb-4 text-text leading-tight group-hover:text-primary transition-colors duration-300">
                   {feature.title}
                 </h3>
                 
                 {/* Description with improved readability */}
-                <p className="relative text-text/75 font-body text-base leading-relaxed mb-6 min-h-[4.5rem]">
+                <p className="relative text-text/75 font-body text-sm md:text-base leading-relaxed mb-4 md:mb-6 min-h-[3.5rem] md:min-h-[4.5rem]">
                   {feature.description}
                 </p>
                 

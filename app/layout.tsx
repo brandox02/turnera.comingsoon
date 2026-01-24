@@ -133,29 +133,29 @@ export const metadata: Metadata = {
     locale: "es_ES",
     url: SITE_URL,
     siteName: "Turnera",
-    title: "Turnera - Sistema de Citas 24/7 para Barberías",
+    title: "Turnera - Tu tiempo, organizado. Automatiza tus citas y maximiza tus ingresos.",
     description:
-      "La plataforma completa para gestionar citas y turnos. Reservas online 24/7, pagos integrados y notificaciones automáticas.",
+      "Gestiona citas y turnos para barberías y salones online 24/7, pagos integrados y notificaciones automáticas.",
     images: [
       {
         // Usar logo existente hasta que se cree og-image.jpg (1200x630px)
         // Para mejor resultado, crear og-image.jpg con el tamaño correcto
-        url: `${SITE_URL}/images/logos/turnera-logotipo-horizontal.jpg`,
+        url: `${SITE_URL}/images/logos/turnera-logotipo-og.jpg`,
         width: 1200,
         height: 630,
-        alt: "Turnera - Sistema de Citas para Barberías y Salones",
+        alt: "Turnera - Gestiona citas y turnos para Barberías y Salones",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Turnera - Sistema de Citas para Barberías y Salones",
+    title: "Turnera - Tu tiempo, organizado. Automatiza tus citas y maximiza tus ingresos.",
     description:
-      "Reservas online 24/7, pagos integrados y notificaciones automáticas. Automatiza tus citas y maximiza tus ingresos.",
+      "Gestiona citas y turnos para barberías y salones online 24/7, pagos integrados y notificaciones automáticas",
     images: [
       // Usar logo existente hasta que se cree twitter-image.jpg (1200x675px)
       // Para mejor resultado, crear twitter-image.jpg con el tamaño correcto
-      `${SITE_URL}/images/logos/turnera-logotipo-horizontal.jpg`,
+      `${SITE_URL}/images/logos/turnera-logotipo-og.png`,
     ],
   },
   robots: {

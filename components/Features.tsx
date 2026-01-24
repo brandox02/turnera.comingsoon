@@ -110,10 +110,11 @@ export default function Features() {
             ¿Por qué <span className="text-primary-light">Turnera</span>?
           </h2>
           <p className="text-xl md:text-2xl text-white/80 font-body font-medium max-w-3xl mx-auto leading-relaxed mb-12">
-            No es solo una herramienta. Es tu ventaja competitiva.{' '}
-            <span className="text-primary-light font-semibold">
-              Mientras otros pierden clientes, tú los ganas.
+            No es solo una herramienta. Es la ventaja competitiva que necesita tu barbería o salón {' '}
+            <span className="text-primary-light font-semibold text-xl md:text-2xl">
+              para ganar clientes y aumentar tus ingresos.
             </span>
+            {' '}
           </p>
         </div>
 

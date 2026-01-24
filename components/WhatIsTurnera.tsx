@@ -13,18 +13,40 @@ import {
 const features = [
   {
     icon: Bell,
-    title: 'Notificaciones Automáticas que Reducen Ausencias',
+    title: 'Notificaciones Automáticas que Aumentan tus Ingresos',
     description:
-      'Recordatorios automáticos 1 hora antes de la cita, seguimiento después de una semana para asegurar que vuelva, y alertas cuando detectamos inactividad para reactivar clientes.',
-    highlight: 'Reduce ausencias hasta en un 80% y recupera clientes inactivos automáticamente',
+      'Recordatorios automáticos 1 hora antes de la cita, seguimiento después de una semana para asegurar que vuelva, y alertas cuando detectamos inactividad de asistencia para motivarlos a volver.',
+    highlight: 'Reduce ausencias hasta en un 80%, aumenta la frecuencia de asistencia de tus clientes hasta en un 50% y recupera clientes inactivos automáticamente',
   },
   {
     icon: CreditCard,
-    title: 'Cobra Antes con Pagos Online Flexibles',
+    title: 'Cobra Antes de Llegar con Pagos Online Flexibles',
     description:
       'Configura pagos online opcionales: cobra el total, la mitad o un abono. Acepta tarjeta de crédito, transferencia o pago en el local. Tú decides cómo quieres cobrar.',
-    highlight: 'Asegura tu flujo de caja y compromiso del cliente desde la reserva',
+    highlight: 'Asegura la entrada de dinero y compromiso del cliente desde la reserva',
   },
+  {
+    icon: BarChart3,
+    title: 'Conoce a tus Clientes para Vender Más',
+    description:
+      'Listado completo de clientes con información clave: quiénes asisten más, quiénes gastan más, qué servicios se hacen y cada cuánto tiempo. Con esta data podrás personalizar el trato y aplicar estrategias de marketing dirigidas acorde al valor real del cliente.',
+    highlight: 'Fideliza clientes con trato personalizado y estrategias de marketing/ventas personalizadas',
+  },
+  {
+    icon: Globe,
+    title: 'Página de Reserva Profesional y Personalizada',
+    description:
+      'Configura y comparte tu página online de reserva con total control sobre todos los detalles de tu negocio. Detalla tus servicios de manera profesional para que los clientes lleguen informados y elijan exactamente lo que desean.',
+    highlight: 'Brinda mayor comodidad y flexibilidad a tus clientes, aumenta conversión',
+  },
+  {
+    icon: Clock,
+    title: 'Tu Negocio Nunca Cierra',
+    description:
+      'Recibe reservas 24/7, incluso mientras duermes o estás ocupado. Los clientes agendan citas en cualquier momento sin preocupaciones. Brindale esa flexibilidad a tus clientes',
+    highlight: 'No pierdas clientes por horarios limitados. Captura reservas mientras duermes',
+  },
+
   {
     icon: Users,
     title: 'Gestiona Múltiples Colaboradores Sin Límites',
@@ -32,27 +54,8 @@ const features = [
       'Crea agendas o filas individuales para cada barbero o estilista. Maximiza tu capacidad de atención y asegura que cada colaborador pueda atender la mayor cantidad de clientes posible.',
     highlight: 'Escala tu negocio sin complicaciones, sin importar cuántos colaboradores tengas',
   },
-  {
-    icon: Clock,
-    title: 'Tu Negocio Nunca Cierra',
-    description:
-      'Recibe reservas 24/7, incluso mientras duermes o estás ocupado. Los clientes agendan citas en cualquier momento sin preocupaciones.',
-    highlight: 'No pierdas clientes por horarios limitados. Captura reservas mientras duermes',
-  },
-  {
-    icon: Globe,
-    title: 'Página de Reserva Profesional y Personalizada',
-    description:
-      'Configura tu página online de reserva con todos los detalles de tu negocio. Detalla tus servicios de manera profesional para que los clientes lleguen informados y elijan exactamente lo que desean.',
-    highlight: 'Brinda mayor comodidad y flexibilidad a tus clientes, aumenta conversión',
-  },
-  {
-    icon: BarChart3,
-    title: 'Conoce a tus Clientes para Vender Más',
-    description:
-      'Listado completo de clientes con información clave: quiénes asisten más, quiénes gastan más, qué servicios se hacen y cada cuánto tiempo. Métricas de asistencia para personalizar el trato y aplicar estrategias de ventas y marketing.',
-    highlight: 'Fideliza clientes con trato personalizado y estrategias de marketing dirigidas',
-  },
+
+
 ];
 
 export default function WhatIsTurnera() {
@@ -71,7 +74,7 @@ export default function WhatIsTurnera() {
           </h2>
           <p className="text-xl md:text-2xl text-text/70 font-body font-medium max-w-3xl mx-auto leading-relaxed mb-6">
             Una aplicación fácil de usar que resuelve los problemas reales de tu negocio desde tu celular.
-            Automatiza reservas, reduce ausencias y te ayuda a ganar más dinero.
+            Automatiza reservas, reduce ausencias, incrementa tus ingresos y mejora la experiencia y fidelidad de tus clientes.
           </p>
           {/* Mención de App Móvil */}
           {false && < div className="inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-primary/10 via-primary/5 to-primary-light/10 border border-primary/20 rounded-full shadow-[0_4px_20px_rgba(172,33,33,0.1)] hover:shadow-[0_6px_30px_rgba(172,33,33,0.15)] transition-all duration-300 hover:scale-105">

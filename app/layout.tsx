@@ -140,7 +140,7 @@ export const metadata: Metadata = {
       {
         // Usar logo existente hasta que se cree og-image.jpg (1200x630px)
         // Para mejor resultado, crear og-image.jpg con el tamaño correcto
-        url: `${SITE_URL}/images/logos/turnera-logotipo-og.jpg`,
+        url: `${SITE_URL}/images/logos/turnera-isotipo.jpg`,
         width: 1200,
         height: 630,
         alt: "Turnera - Gestiona citas y turnos para Barberías y Salones",
@@ -155,7 +155,7 @@ export const metadata: Metadata = {
     images: [
       // Usar logo existente hasta que se cree twitter-image.jpg (1200x675px)
       // Para mejor resultado, crear twitter-image.jpg con el tamaño correcto
-      `${SITE_URL}/images/logos/turnera-logotipo-og.png`,
+      `${SITE_URL}/images/logos/turnera-isotipo.jpg`,
     ],
   },
   robots: {

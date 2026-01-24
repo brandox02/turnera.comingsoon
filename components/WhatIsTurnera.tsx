@@ -63,8 +63,8 @@ export default function WhatIsTurnera() {
     >
       <div className="max-w-screen-xl mx-auto">
         <div className="text-center mb-20 md:mb-24 fade-in-up">
-          <span className="inline-block px-4 py-1.5 bg-primary/10 text-primary rounded-full text-xs font-sans font-bold uppercase tracking-widest mb-6">
-            Tu solución completa para barberías y salones
+          <span className=" inline-block px-4 py-3 bg-primary/10 text-primary rounded-full text-xs font-sans font-bold uppercase tracking-widest mb-6">
+            Tu solución para barberías y salones
           </span>
           <h2 className="font-sans font-black text-5xl md:text-7xl tracking-tighter mb-6">
             ¿Qué es <span className="text-primary">Turnera</span>?
@@ -95,27 +95,27 @@ export default function WhatIsTurnera() {
               >
                 {/* Glassmorphism overlay effect */}
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary-light/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
-                
+
                 {/* Subtle shine effect on hover */}
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 pointer-events-none" />
-                
+
                 {/* Icon container with enhanced depth */}
                 <div className="relative w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-primary via-primary-dark to-primary-light rounded-2xl flex items-center justify-center mb-6 md:mb-8 shadow-[0_8px_24px_rgba(172,33,33,0.25)] group-hover:shadow-[0_12px_32px_rgba(172,33,33,0.35)] group-hover:scale-110 transition-all duration-500">
                   <Icon className="w-7 h-7 md:w-9 md:h-9 text-white relative z-10" />
                   {/* Icon glow effect */}
                   <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent rounded-2xl" />
                 </div>
-                
+
                 {/* Title with better hierarchy */}
                 <h3 className="relative font-sans font-bold text-xl md:text-2xl mb-3 md:mb-4 text-text leading-tight group-hover:text-primary transition-colors duration-300">
                   {feature.title}
                 </h3>
-                
+
                 {/* Description with improved readability */}
                 <p className="relative text-text/75 font-body text-sm md:text-base leading-relaxed mb-4 md:mb-6 min-h-[3.5rem] md:min-h-[4.5rem]">
                   {feature.description}
                 </p>
-                
+
                 {/* Highlight with enhanced visibility */}
                 {feature.highlight && (
                   <div className="relative pt-4 border-t border-primary/10 group-hover:border-primary/20 transition-colors duration-300">

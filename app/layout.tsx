@@ -118,6 +118,16 @@ export const metadata: Metadata = {
     telephone: false,
   },
   themeColor: "#AC2121",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon.png", type: "image/png", sizes: "32x32" },
+    ],
+    apple: [
+      { url: "/favicon.png", sizes: "180x180", type: "image/png" },
+    ],
+    shortcut: "/favicon.ico",
+  },
   openGraph: {
     type: "website",
     locale: "es_ES",
@@ -128,7 +138,9 @@ export const metadata: Metadata = {
       "La plataforma completa para gestionar citas y turnos. Reservas online 24/7, pagos integrados y notificaciones automáticas.",
     images: [
       {
-        url: `${SITE_URL}/og-image.jpg`,
+        // Usar logo existente hasta que se cree og-image.jpg (1200x630px)
+        // Para mejor resultado, crear og-image.jpg con el tamaño correcto
+        url: `${SITE_URL}/images/logos/turnera-logotipo-horizontal.jpg`,
         width: 1200,
         height: 630,
         alt: "Turnera - Sistema de Citas para Barberías y Salones",
@@ -140,7 +152,11 @@ export const metadata: Metadata = {
     title: "Turnera - Sistema de Citas para Barberías y Salones",
     description:
       "Reservas online 24/7, pagos integrados y notificaciones automáticas. Automatiza tus citas y maximiza tus ingresos.",
-    images: [`${SITE_URL}/twitter-image.jpg`],
+    images: [
+      // Usar logo existente hasta que se cree twitter-image.jpg (1200x675px)
+      // Para mejor resultado, crear twitter-image.jpg con el tamaño correcto
+      `${SITE_URL}/images/logos/turnera-logotipo-horizontal.jpg`,
+    ],
   },
   robots: {
     index: true,

@@ -2,7 +2,9 @@
 
 ## Estado Actual
 
-Las siguientes imágenes están referenciadas en la configuración de metadata pero **NO EXISTEN** en el directorio `public/`:
+**IMPORTANTE**: Actualmente se está usando el logo existente (`/images/logos/turnera-logotipo-horizontal.jpg`) como imagen temporal para Open Graph y Twitter. 
+
+Las siguientes imágenes están recomendadas para mejor presentación en redes sociales pero **NO EXISTEN** en el directorio `public/`:
 
 ## Imágenes Faltantes
 
@@ -48,7 +50,7 @@ Una vez creadas las imágenes, verificar que:
 ## Nota
 
 Las imágenes están configuradas en `app/layout.tsx` en:
-- `metadata.openGraph.images[0].url`
-- `metadata.twitter.images[0]`
+- `metadata.openGraph.images[0].url` - Actualmente usando logo temporal
+- `metadata.twitter.images[0]` - Actualmente usando logo temporal
 
-Si no se crean estas imágenes, las redes sociales mostrarán una imagen por defecto o ninguna imagen al compartir el sitio.
+**Estado actual**: Se está usando el logo horizontal como imagen temporal. Para mejor presentación en redes sociales, se recomienda crear las imágenes específicas con los tamaños correctos (1200x630px para OG y 1200x675px para Twitter).

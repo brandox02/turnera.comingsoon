@@ -63,7 +63,7 @@ const organizationSchema = {
   description:
     "Plataforma de gestión de citas y turnos para barberías y salones de belleza. Sistema completo con reservas online 24/7, pagos integrados y notificaciones inteligentes.",
   sameAs: [
-    "https://www.instagram.com/turnera.official",
+    "https://www.instagram.com/turnera.app",
   ],
 };
 

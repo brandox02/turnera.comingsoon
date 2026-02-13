@@ -72,7 +72,7 @@ export default function Footer() {
             </h3>
             <div className="flex items-center gap-3 mb-6">
               <a
-                href="https://www.instagram.com/turnera.official"
+                href="https://www.instagram.com/turnera.app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative w-12 h-12 rounded-xl border-2 border-white/20 flex items-center justify-center hover:border-primary hover:bg-primary/10 transition-all duration-300 hover:scale-110 hover:shadow-[0_0_20px_rgba(172,33,33,0.3)]"
@@ -81,7 +81,7 @@ export default function Footer() {
                 <Instagram className="w-5 h-5 text-white/80 group-hover:text-primary-light transition-colors duration-300" />
               </a>
               <a
-                href="https://www.instagram.com/turnera.official"
+                href="https://www.instagram.com/turnera.app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative w-12 h-12 rounded-xl border-2 border-white/20 flex items-center justify-center hover:border-primary hover:bg-primary/10 transition-all duration-300 hover:scale-110 hover:shadow-[0_0_20px_rgba(172,33,33,0.3)]"

@@ -58,7 +58,7 @@ export default function Logo({
       ? 'Logotipo vertical de Turnera' 
       : 'Logotipo horizontal de Turnera';
     const colorText = color === 'white' ? 'en color blanco' : 'en color';
-    return `${variantText} ${colorText} - Sistema de gestión de citas para barberías y salones`;
+    return `${variantText} ${colorText} - App de gestión de citas para barberías y salones`;
   };
 
   // Si hay error cargando la imagen, mostrar fallback

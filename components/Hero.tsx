@@ -1,13 +1,11 @@
 'use client';
 
 import { useEffect } from 'react';
-import CountdownTimer from './CountdownTimer';
-import { scrollToElement } from '@/lib/utils';
-import { ArrowRight } from 'lucide-react';
+import { APP_TURNERA_URL, BOOK_TURNERA_URL } from '@/lib/constants';
+import { ArrowRight, Calendar, Store } from 'lucide-react';
 
 export default function Hero() {
   useEffect(() => {
-    // Reveal text animation on load
     const revealElements = document.querySelectorAll('.reveal-inner');
     revealElements.forEach((el, index) => {
       setTimeout(() => {
@@ -15,16 +13,6 @@ export default function Hero() {
       }, index * 100);
     });
   }, []);
-
-  const handleNotifyClick = () => {
-    scrollToElement('notify-form');
-    setTimeout(() => {
-      const emailInput = document.getElementById('email-input');
-      if (emailInput) {
-        emailInput.focus();
-      }
-    }, 500);
-  };
 
   return (
     <header
@@ -98,7 +86,7 @@ export default function Hero() {
               </span>
               <span className="block overflow-visible">
                 <span className="text-white">
-                  está llegando
+                  reserva y gestiona
                 </span>
               </span>
             </h1>
@@ -107,27 +95,44 @@ export default function Hero() {
           {/* Subheadline */}
           <div className="max-w-2xl mx-auto mb-10 md:mb-12">
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 font-body font-medium leading-tight mb-2 md:mb-3">
-              Revoluciona tu Barbería o Salón con Turnera
+              Tu barbería o salón, en un solo lugar
             </p>
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white/70 font-body leading-relaxed">
-              Automatiza tus citas, gestiona las filas y maximiza tus ingresos desde tu celular. Deja de perder clientes y empieza a escalar tu negocio <span className="text-primary-light">sin costo</span>.
+              Gestiona citas, filas y pagos desde tu celular — o agenda tu cita en segundos. Elige tu camino.
             </p>
           </div>
 
-          {/* CTA Button */}
-          <button
-            onClick={handleNotifyClick}
-            className="bg-gradient-to-r from-primary via-primary-dark to-primary-light text-white px-10 py-5 rounded-full font-sans font-black text-sm uppercase tracking-widest hover:shadow-[0_0_40px_rgba(172,33,33,0.4)] transition-all duration-300 inline-flex items-center gap-3 group"
-          >
-            <span>Notificarme del Lanzamiento</span>
-            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </button>
-        </div>
-
-        {/* Horizontal Countdown */}
-        <div className="mt-16">
-          <div className="flex justify-center items-center gap-4 md:gap-6">
-            <CountdownTimer variant="horizontal" />
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-6 md:gap-8">
+            <div className="flex flex-col items-center gap-2 w-full sm:w-auto">
+              <span className="text-white/60 text-xs font-sans font-bold uppercase tracking-wider">
+                Para tu negocio
+              </span>
+              <a
+                href={APP_TURNERA_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gradient-to-r from-primary via-primary-dark to-primary-light text-white px-10 py-5 rounded-full font-sans font-black text-sm uppercase tracking-widest hover:shadow-[0_0_40px_rgba(172,33,33,0.4)] transition-all duration-300 inline-flex items-center gap-3 group w-full sm:w-auto justify-center"
+              >
+                <Store className="w-5 h-5" />
+                <span>Gestionar mi negocio</span>
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </a>
+            </div>
+            <div className="flex flex-col items-center gap-2 w-full sm:w-auto">
+              <span className="text-white/60 text-xs font-sans font-bold uppercase tracking-wider">
+                Turnera cliente
+              </span>
+              <a
+                href={BOOK_TURNERA_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border-2 border-white/30 text-white px-10 py-5 rounded-full font-sans font-bold text-sm uppercase tracking-widest hover:bg-white/10 hover:border-white/50 transition-all duration-300 inline-flex items-center gap-3 group w-full sm:w-auto justify-center"
+              >
+                <Calendar className="w-5 h-5" />
+                <span>Soy cliente</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>

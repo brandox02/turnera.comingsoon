@@ -2,6 +2,7 @@
 
 import { Facebook, Instagram } from 'lucide-react';
 import { scrollToElement } from '@/lib/utils';
+import { APP_TURNERA_URL, BOOK_TURNERA_URL } from '@/lib/constants';
 import Logo from './Logo';
 
 export default function Footer() {
@@ -32,7 +33,7 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Navigation Links */}
+          {/* Navigation + Productos */}
           <div className="flex flex-col items-center md:items-start">
             <h3 className="font-sans font-bold text-sm uppercase tracking-wider text-white/80 mb-4">
               Navegación
@@ -59,7 +60,30 @@ export default function Footer() {
                 onClick={(e) => handleLinkClick(e, 'coming-soon')}
                 className="text-white/70 hover:text-primary-light transition-colors duration-300 font-body text-sm relative group"
               >
-                <span className="relative z-10">Contacto</span>
+                <span className="relative z-10">Acceso</span>
+                <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-primary-light group-hover:w-full transition-all duration-300" />
+              </a>
+            </nav>
+            <h3 className="font-sans font-bold text-sm uppercase tracking-wider text-white/80 mb-4 mt-8">
+              Productos
+            </h3>
+            <nav className="flex flex-col gap-3">
+              <a
+                href={APP_TURNERA_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/70 hover:text-primary-light transition-colors duration-300 font-body text-sm relative group"
+              >
+                <span className="relative z-10">Turnera para negocios</span>
+                <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-primary-light group-hover:w-full transition-all duration-300" />
+              </a>
+              <a
+                href={BOOK_TURNERA_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/70 hover:text-primary-light transition-colors duration-300 font-body text-sm relative group"
+              >
+                <span className="relative z-10">Turnera cliente</span>
                 <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-primary-light group-hover:w-full transition-all duration-300" />
               </a>
             </nav>

@@ -35,13 +35,13 @@ const softwareApplicationSchema = {
     "@type": "Offer",
     price: "0",
     priceCurrency: "USD",
-    availability: "https://schema.org/PreOrder",
+    availability: "https://schema.org/InStock",
   },
   description:
-    "Sistema completo de gestión de citas y turnos para barberías y salones con reservas online 24/7, pagos integrados y notificaciones inteligentes.",
+    "App completa de gestión de citas y turnos para barberías y salones con reservas online 24/7, pagos integrados y notificaciones inteligentes.",
   featureList: [
     "Reservas online 24/7",
-    "Sistema de pagos integrado",
+    "App de pagos integrado",
     "Notificaciones automáticas",
     "Gestión de múltiples especialistas",
     "Métricas y analytics",
@@ -61,7 +61,7 @@ const organizationSchema = {
   url: SITE_URL,
   logo: `${SITE_URL}/images/logos/turnera-logotipo-horizontal.jpg`,
   description:
-    "Plataforma de gestión de citas y turnos para barberías y salones de belleza. Sistema completo con reservas online 24/7, pagos integrados y notificaciones inteligentes.",
+    "Plataforma de gestión de citas y turnos para barberías y salones de belleza. App completa con reservas online 24/7, pagos integrados y notificaciones inteligentes.",
   sameAs: [
     "https://www.instagram.com/turnera.app",
   ],
@@ -73,7 +73,7 @@ const websiteSchema = {
   name: "Turnera",
   url: SITE_URL,
   description:
-    "Sistema de gestión de citas y turnos para barberías y salones. Reservas online 24/7, pagos integrados y notificaciones automáticas.",
+    "App de gestión de citas y turnos para barberías y salones. Reservas online 24/7, pagos integrados y notificaciones automáticas.",
   publisher: {
     "@type": "Organization",
     name: "Turnera",
@@ -82,29 +82,29 @@ const websiteSchema = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "Turnera - Sistema de Citas para Barberías y Salones",
+  title: "Turnera - App de Citas para Barberías y Salones",
   description:
-    "Turnera automatiza tus citas, gestiona tu cola y maximiza tus ingresos. Reservas online 24/7, pagos integrados y notificaciones automáticas. Sistema completo para barberías y salones de belleza.",
+    "Turnera automatiza tus citas, gestiona tu cola y maximiza tus ingresos. Reservas online 24/7, pagos integrados y notificaciones automáticas. App completa para barberías y salones de belleza.",
   keywords: [
     "Turnera",
-    "sistema de citas barberías",
+    "app de citas barberías",
     "gestión turnos salones",
     "app barberías",
     "reservas online 24/7",
     "pagos online citas",
     "software salones belleza",
-    "sistema de citas para barberías",
+    "app de citas para barberías",
     "gestión de turnos salones de belleza",
     "app para barberías",
     "software de citas para salones",
-    "sistema de reservas online barbería",
+    "app de reservas online barbería",
     "gestión de colas barbería",
     "app de citas para salones de belleza",
     "notificaciones automáticas citas",
-    "sistema de gestión barbería",
+    "app de gestión barbería",
     "software para salones de belleza",
     "app gestión citas barbería",
-    "sistema de citas latinoamérica",
+    "app de citas latinoamérica",
     "reservas online barberías",
     "pagos anticipados citas",
     "reducción ausencias barberías",

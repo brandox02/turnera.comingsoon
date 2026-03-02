@@ -16,7 +16,7 @@ import { ArrowRight } from 'lucide-react';
 const clientFlow = [
   {
     icon: Search,
-    title: 'Buscar & Reservar',
+    title: 'Buscar y agendar',
     description: 'El cliente encuentra tu negocio en línea y ve horarios disponibles 24/7',
     type: 'Cliente',
   },

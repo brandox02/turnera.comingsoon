@@ -15,7 +15,7 @@ Las siguientes imágenes están recomendadas para mejor presentación en redes s
 - **Descripción**: Imagen que se mostrará cuando se comparta el sitio en redes sociales
 - **Recomendaciones**:
   - Incluir el logo de Turnera
-  - Texto legible: "Turnera - Sistema de Citas para Barberías y Salones"
+  - Texto legible: "Turnera - App de Citas para Barberías y Salones"
   - Colores de marca (rojo #AC2121)
   - Diseño atractivo y profesional
 

@@ -14,7 +14,7 @@ export function useScrollAnimation() {
         if (entry.isIntersecting) {
           const delay = entry.target.getAttribute('data-delay');
           const delayMs = delay ? parseFloat(delay) * 1000 : 0;
-          
+
           setTimeout(() => {
             entry.target.classList.add('visible');
           }, delayMs);

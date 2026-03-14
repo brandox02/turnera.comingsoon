@@ -63,6 +63,14 @@ export default function Footer() {
                 <span className="relative z-10">Acceso</span>
                 <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-primary-light group-hover:w-full transition-all duration-300" />
               </a>
+              <a
+                href="#soporte"
+                onClick={(e) => handleLinkClick(e, 'soporte')}
+                className="text-white/70 hover:text-primary-light transition-colors duration-300 font-body text-sm relative group"
+              >
+                <span className="relative z-10">Soporte</span>
+                <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-primary-light group-hover:w-full transition-all duration-300" />
+              </a>
             </nav>
             <h3 className="font-sans font-bold text-sm uppercase tracking-wider text-white/80 mb-4 mt-8">
               Productos

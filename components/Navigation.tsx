@@ -18,6 +18,7 @@ export default function Navigation() {
     { id: 'what-is', label: 'Acerca de' },
     { id: 'features', label: 'Funcionalidades' },
     { id: 'coming-soon', label: 'Acceso' },
+    { id: 'soporte', label: 'Soporte' },
   ];
 
   return (

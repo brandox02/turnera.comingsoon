@@ -5,6 +5,7 @@ import Hero from '@/components/Hero';
 import WhatIsTurnera from '@/components/WhatIsTurnera';
 import Features from '@/components/Features';
 import ComingSoon from '@/components/ComingSoon';
+import SoporteSection from '@/components/SoporteSection';
 import Footer from '@/components/Footer';
 import { useScrollAnimation } from './hooks/useScrollAnimation';
 
@@ -18,6 +19,7 @@ export default function Home() {
       <WhatIsTurnera />
       <Features />
       <ComingSoon />
+      <SoporteSection />
       <Footer />
     </main>
   );

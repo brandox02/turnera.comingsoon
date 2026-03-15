@@ -116,10 +116,10 @@ export default function PrivacidadPage() {
           <section className="pt-6 border-t border-text/10">
             <p className="font-body text-text/90 mb-2">¿Tiene alguna duda?</p>
             <a
-              href="mailto:soporte@turnera.com"
+              href="mailto:brandox02.dev@gmail.com"
               className="font-body text-primary font-medium hover:underline"
             >
-              Contáctenos en soporte@turnera.com
+              Contáctenos en brandox02.dev@gmail.com
             </a>
           </section>
         </div>

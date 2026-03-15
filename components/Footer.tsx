@@ -94,6 +94,13 @@ export default function Footer() {
                 <span className="relative z-10">Turnera cliente</span>
                 <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-primary-light group-hover:w-full transition-all duration-300" />
               </a>
+              <a
+                href="/privacidad"
+                className="text-white/70 hover:text-primary-light transition-colors duration-300 font-body text-sm relative group"
+              >
+                <span className="relative z-10">Políticas de privacidad</span>
+                <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-primary-light group-hover:w-full transition-all duration-300" />
+              </a>
             </nav>
           </div>
 

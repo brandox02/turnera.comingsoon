@@ -100,30 +100,29 @@ export default function Hero() {
             aria-label="Descargar en Google Play"
             className="group relative flex-1 flex items-center gap-4 rounded-2xl border border-white/10 bg-white/[0.06] px-5 py-4 backdrop-blur-sm transition-all duration-300 hover:border-white/20 hover:bg-white/[0.1] active:scale-[0.98]"
           >
-            {/* Google Play icon */}
-            <svg className="h-8 w-8 shrink-0" viewBox="0 0 512 512" aria-hidden>
-              <defs>
-                <linearGradient id="gp1" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stopColor="#00C6FF" />
-                  <stop offset="100%" stopColor="#0072FF" />
-                </linearGradient>
-                <linearGradient id="gp2" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" stopColor="#FFD945" />
-                  <stop offset="100%" stopColor="#FFA000" />
-                </linearGradient>
-                <linearGradient id="gp3" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stopColor="#FF3D00" />
-                  <stop offset="100%" stopColor="#DD2C00" />
-                </linearGradient>
-                <linearGradient id="gp4" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stopColor="#00E676" />
-                  <stop offset="100%" stopColor="#00897B" />
-                </linearGradient>
-              </defs>
-              <path fill="url(#gp1)" d="M48 32l208 224L48 480c-8-8-16-20-16-36V68c0-16 8-28 16-36z" />
-              <path fill="url(#gp2)" d="M352 224L256 128l96-68 80 56c16 11 24 27 24 40s-8 29-24 40l-80 28z" />
-              <path fill="url(#gp3)" d="M48 480l208-224 96 96-224 160c-24 16-56 0-80-32z" />
-              <path fill="url(#gp4)" d="M48 32c24-32 56-48 80-32l224 160-96 96L48 32z" />
+            {/* Google Play icon — Simple Icons geometry + Google brand fills (crisp at small sizes) */}
+            <svg
+              className="h-8 w-8 shrink-0"
+              viewBox="0 0 24 24"
+              aria-hidden
+              shapeRendering="geometricPrecision"
+            >
+              <path
+                fill="#FBBC04"
+                d="M22.018 13.298l-3.919 2.218-3.515-3.493 3.543-3.521 3.891 2.202a1.49 1.49 0 0 1 0 2.594z"
+              />
+              <path
+                fill="#4285F4"
+                d="M1.337.924a1.486 1.486 0 0 0-.112.568v21.017c0 .217.045.419.124.6l11.155-11.087L1.337.924z"
+              />
+              <path
+                fill="#34A853"
+                d="M13.544 10.989l3.258-3.238L3.45.195a1.466 1.466 0 0 0-.946-.179l11.04 10.973z"
+              />
+              <path
+                fill="#EA4335"
+                d="M13.544 13.056l-11 10.933c.298.036.612-.016.906-.183l13.324-7.54-3.23-3.21z"
+              />
             </svg>
             <div className="text-left">
               <p className="text-[10px] uppercase tracking-widest text-white/40 leading-none mb-0.5">Disponible en</p>
